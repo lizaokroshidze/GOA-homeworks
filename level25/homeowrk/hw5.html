@@ -1,0 +1,59 @@
+<!--5) დაწერეთ ფორმა რომელშიც მომხმარებელი დარეგისტრირდება რაიმე event-ზე-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+
+<h2>Event Registration</h2>
+
+<form>
+    <!-- First Name -->
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br><br>
+
+    <!-- Last Name -->
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <!-- Phone -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    <br><br>
+
+    <!-- Age Group -->
+    <label for="ageGroup">Age Group:</label>
+    <select id="ageGroup" name="ageGroup" required>
+        <option value="">Select age group</option>
+        <option value="under18">Under 18</option>
+        <option value="18-30">18-30</option>
+        <option value="31-50">31-50</option>
+        <option value="over50">Over 50</option>
+    </select>
+    <br><br>
+
+    <!-- Comments -->
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" placeholder="Enter any additional comments"></textarea><br><br>
+
+    <!-- Agreement Checkbox -->
+    <label for="agree">I agree to the terms and conditions.</label>
+    <input type="checkbox" id="agree" name="agree" required>
+    <br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Register</button>
+</form>
+
+</body>
+</html>
