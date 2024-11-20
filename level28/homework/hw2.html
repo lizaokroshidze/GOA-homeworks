@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetBreedFinder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      color: black;
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .category {
+      margin-bottom: 30px;
+    }
+
+    .category h2 {
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .breed-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .breed-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: calc(33.333% - 20px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .breed-card img, .breed-card video {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .breed-card h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .breed-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .breed-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .breed-card a:hover {
+      background-color: #45a049;
+    }
+
+    .breed-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .breed-card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .breed-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>PetBreedFinder</h1>
+  <p><b>Find the perfect breed for your family!</b></p>
+</header>
+
+<div class="container">
+  <!-- Category: Dogs -->
+  <div class="category">
+    <h2>Dogs</h2>
+    <div class="breed-grid">
+      <div class="breed-card">
+        <img src="https://i.pinimg.com/736x/91/c5/fa/91c5fa358f2d8c72fe03b70f6f664889.jpg" alt="Labrador Retriever">
+        <h3>Labrador Retriever</h3>
+        <p>Friendly, energetic, and great with families.</p>
+        <a href="#">Learn More</a>
+        <!-- Add Video -->
+        <video controls autoplay muted>
+          <source src="LABRADOR RETRIEVER - ALL About This Popular Breed.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="breed-card">
+        <img src="https://i.pinimg.com/736x/06/2f/dc/062fdcadc88ca9eb958b96697768dc61.jpg" alt="Doberman">
+        <h3>Doberman</h3>
+        <p>The Doberman is an intelligent, loyal, and strong dog known for its protective abilities and sleek appearance.</p>
+        <a href="#">Learn More</a>
+        <!-- Add Video -->
+        <video controls autoplay muted>
+          <source src="Doberman Pinscher - Top 10 Facts.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category: Cats -->
+  <div class="category">
+    <h2>Cats</h2>
+    <div class="breed-grid">
+      <div class="breed-card">
+        <img src="https://i.pinimg.com/736x/6d/7c/e8/6d7ce84e50008350cd0a7f3a3606749c.jpg" alt="Persian Cat">
+        <h3>Persian Cat</h3>
+        <p>Calm, affectionate, and beautiful.</p>
+        <a href="#">Learn More</a>
+        <!-- Add Video -->
+        <video controls autoplay muted>
+          <source src="10 FACTS About PERSIAN CATS 🐱 Do You Know Them All_.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="breed-card">
+        <img src="https://i.pinimg.com/736x/2d/8e/e3/2d8ee3d44e6ee9c5d0f88a14bae6c4f6.jpg" alt="Sphynx Cat">
+        <h3>Sphynx</h3>
+        <p>The Sphynx cat is a hairless, affectionate, and energetic breed known for its wrinkled skin and friendly, social personality.</p>
+        <a href="#">Learn More</a>
+        <!-- Add Video -->
+        <video controls autoplay muted>
+          <source src="10 Interesting Facts About Sphynx Cats.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
