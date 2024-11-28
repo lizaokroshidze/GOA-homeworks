@@ -1,1 +1,0 @@
-# screenebis saxit sheamowmes cw.
