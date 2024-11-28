@@ -30,6 +30,13 @@
 # print(numbers2)
 
 
+#count 
+
+# my_list = ["liza", "anna", "niko", "ina"]
+
+# print(my_list.count("liza"))
+
+
 
 
 
