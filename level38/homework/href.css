@@ -1,0 +1,12 @@
+.parent-div{
+    width: 500px;
+    border: 2px solid black;
+}
+
+.child-div{
+    width: 25%;
+}
+
+.child-div p {
+    font-size: 50%;
+}
