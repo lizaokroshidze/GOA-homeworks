@@ -1,0 +1,52 @@
+.div{
+    width: 30%;
+    font-family: cursive;
+    background-color: pink;
+    color: black;
+}
+
+.p1{
+    text-decoration: underline wavy red;
+    text-align: end;
+}
+
+.p2{
+    text-decoration: line-through hotpink;
+    text-align: center;
+}
+
+.p3{
+    text-decoration: overline double red;
+}
+
+.p4{
+    text-decoration: underline blue;
+    text-align: center;
+}
+
+.p5{
+    text-decoration: line-through dotted chocolate;
+    text-align: end;
+}
+
+.p6{
+    text-decoration: line-through red;
+}
+
+.p7{
+    text-decoration: overline black;
+}
+
+.p8{
+    text-decoration: overline blueviolet;
+    text-align: end;
+}
+
+.p9{
+    text-decoration: overline deeppink;
+    text-align: center;
+}
+
+.p10{
+    text-decoration: underline dotted crimson;
+}
