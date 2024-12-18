@@ -1,0 +1,19 @@
+.h1{
+    color: rgb(167, 132, 230);
+    text-decoration: line-through;
+}
+
+.h2{
+    color: rgb(45, 95, 165);
+    text-decoration: line-through;
+}
+
+.h3{
+    color: hotpink;
+    text-decoration: line-through;
+}
+
+.h4{
+    color: lightskyblue;
+    text-decoration: line-through;
+}

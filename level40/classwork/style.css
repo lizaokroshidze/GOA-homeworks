@@ -1,0 +1,54 @@
+ p{
+    font-size: 30px;
+ }
+
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+ .goa{
+    color: greenyellow;
+    font-size: 60px;
+    text-shadow: 10px 10px black;
+ }
+
+.p1{
+    font-family: serif;
+}
+
+.p2{
+    font-family: sans-serif;
+}
+
+.p3{
+    font-family: monospace;
+}
+
+.p4{
+    font-family: cursive;
+}
+
+.p5{
+    font-family: fantasy;
+}
+
+.p6{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+/* 
+    serif
+    sans-serif
+*/

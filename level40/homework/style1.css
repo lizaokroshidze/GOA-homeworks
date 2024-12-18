@@ -1,0 +1,22 @@
+.red-text{
+    color: red;
+    font-size: 80px;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+.blue-text{
+    color: blue;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: fantasy;
+}
+
+.pink-text{
+    color: hotpink;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+
