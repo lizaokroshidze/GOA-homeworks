@@ -1,0 +1,58 @@
+/* styling links */
+
+
+a{
+    font-size: 50px;
+    text-decoration: none;
+}
+
+
+/* pseudo selectors
+
+   hover მაუსის მიტანა ელემენტზე
+   active აფიქსირებს მაუსის დაჭერას
+
+   link 
+   visited 
+
+*/
+
+
+
+a:hover{
+    text-decoration: underline;
+    color: red;
+
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 15px;
+    border: 5px dotted black;
+    transition: 0.5s;
+    box-shadow: 10px 10px 10px black;
+}
+
+.square:hover{
+    background-color: purple;
+    border-radius: 50%;
+    border: 15px dotted hotpink;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+.square:active{
+    background-color: green;
+    box-shadow: 10px 10px 10px black;
+}
+
+.sololearn:link{
+    color: red;
+}
+
+.sololearn:visited{
+    color: green;
+}
+

@@ -1,0 +1,19 @@
+h1:hover{
+    color: hotpink;
+    background-color: aliceblue;
+    transition: 1s;
+}
+
+.cat:active{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
+.dog{
+    color: black;
+}
+
+.dog:hover{
+    color: darkgray;
+}
