@@ -1,0 +1,9 @@
+.Table{
+    border-collapse: collapse;
+    width: 50%;
+    
+}
+
+tr{
+    background-color: #009879;
+}

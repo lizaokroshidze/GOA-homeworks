@@ -1,0 +1,25 @@
+.ul1{
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+/* 
+
+list-style: type position
+
+disc - default
+circle წრე
+square კვადრატები
+none არაფერი
+ */
+
+ ol{
+    list-style-type: decimal;
+ }
+
+
+ input{
+    border:  none;
+    border-bottom: 1px dotted gray;
+    outline: none;
+ }
