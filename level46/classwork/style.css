@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sixtyfour&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: "Sixtyfour", serif;
+    margin: 30px;
+    color: darkslategray;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ვერტიკალური განლაგება ცენტრში */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none; /* წერტილების წაშლა */
+    gap: 40px; /* ბმულებს შორის დაშორება */
+    margin: 30px;
+}
+
+nav ul li a {
+    text-decoration: none; /* ხაზის წაშლა ბმულებიდან */
+    color: rgb(0, 0, 0); /* ფერი */
+    font-size: 20px; /* ტექსტის ზომა */
+}
