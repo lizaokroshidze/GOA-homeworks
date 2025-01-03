@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Primary */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--Eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    color: var(--Wenge-Brown);
+    font-size: 16px;
+    flex-direction: column;
+}
+
+.container {
+    width: 45rem;
+    background-color: var(--White);
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.container h1 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--Dark-Charcoal);
+    margin-bottom: 1rem;
+}
+
+.dis {
+    margin-bottom: 1rem;
+}
+
+.preparation-time {
+    background-color: var(--Rose-White);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.preparation-time h3 {
+    color: var(--Dark-Raspberry);
+}
+
+.preparation-time li {
+    line-height: 1.5;
+    color: var(--Dark-Charcoal);
+    list-style: none;
+}
+
+.preparation-time li::before {
+    content: "•";
+    margin-right: 0.5rem;
+    color: var(--Dark-Raspberry);
+    font-size: 1.5rem;
+}
+
+.ingredients,
+.instructions {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--Light-Grey);
+    margin-bottom: 1.5rem;
+}
+
+.ingredients h2, .instructions h2, .nutrition h2 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--Nutmeg);
+}
+
+.ingredients li {
+    line-height: 1.3;
+    list-style: none;
+    position: relative;
+}
+
+.ingredients li::before {
+    content: "•";
+    color: var(--Nutmeg);
+    font-size: 1.5rem;
+    padding: 0 2rem 0 0;
+}
+
+.instructions ol {
+    margin-left: 2rem;
+    color: var(--Nutmeg);
+    list-style-position: inside;
+    list-style: decimal;
+}
+
+.instructions li {
+    color: var(--Dark-Charcoal); 
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+}
+
+.instructions li::marker {
+    color: var(--Nutmeg);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nutrition p {
+    margin-bottom: 1rem;
+}
+
+.nutrition table tbody tr td {
+    border-bottom: 2px solid var(--Light-Grey);
+    width: 100%;
+    padding: .5rem;
+}
+.nutrition table tbody tr td strong {
+    margin-right: 17rem;
+    color: var(--Nutmeg)
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
