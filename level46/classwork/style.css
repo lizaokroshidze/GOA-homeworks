@@ -14,18 +14,18 @@ h1{
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* ვერტიკალური განლაგება ცენტრში */
+    align-items: center; 
 }
 
 nav ul {
     display: flex;
-    list-style-type: none; /* წერტილების წაშლა */
-    gap: 40px; /* ბმულებს შორის დაშორება */
+    list-style-type: none; 
+    gap: 40px; 
     margin: 30px;
 }
 
 nav ul li a {
-    text-decoration: none; /* ხაზის წაშლა ბმულებიდან */
-    color: rgb(0, 0, 0); /* ფერი */
-    font-size: 20px; /* ტექსტის ზომა */
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+    font-size: 20px;
 }
