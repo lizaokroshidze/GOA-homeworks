@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    background-color: hotpink;
+    transition: 0.5s;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.square:hover{
+    transform: scale(1.1);
+}
+
+/* transform - ტრანსფორმაცია / გარდაქმნა */
