@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Square{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: translate(20px, 10px);
+}
+
+.Circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: hotpink;
+    margin: 80px;
+    transform: scale(2);
+}
+
+.Triangle{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    margin: 30px;
+    transform: rotate(30deg);
+}
+
+.Square2{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transform: rotate(180deg) scale(1.5);
+    margin: 60px;
+}
+
+.Square3{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transform: translate(50px, 100px);
+}
