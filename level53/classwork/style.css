@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    animation-name: changecolor;
+    animation-duration: 2s;
+}
+
+@keyframes changecolor{
+    from{
+        background-color: blueviolet;
+    }
+
+    to{
+        transform: rotate(350deg);
+        background-color: bisque;
+    }
+}
+
+
+

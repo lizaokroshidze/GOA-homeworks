@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    transition-delay: 2s;
+    background-color: hotpink;
+    transition: background-color 2s ease, transform 4s ease-in-out, width 2s ease-in-out, height 2s ease-in-out;
+}
+
+.square:hover{
+    background-color: red;
+    transform: rotate(2880deg);
+    width: 200px;
+    height: 200px;
+}
+
+
