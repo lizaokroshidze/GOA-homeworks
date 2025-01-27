@@ -1,0 +1,28 @@
+.parent-div {
+    display: grid;
+    grid-template-columns: 200px 300px 400px 500px;
+    grid-auto-rows: auto;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.child-div {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.bottom-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+
+.bottom-element {
+    background-color: lightcoral;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
