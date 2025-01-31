@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: start;
+    height: 100vh;
+    font-family: Roboto;
+}
+
+header{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+header img{
+    width: 5rem;
+}
+
+main{
+    background-color:#F0EFEB;
+}

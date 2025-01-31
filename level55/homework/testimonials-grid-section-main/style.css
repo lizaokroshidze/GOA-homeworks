@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    b
+    display: grid;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", serif;
+}
+
+.Daniel{
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+.Daniel img{
+    border-radius: 50%;
+}
+
+.Verified-d{
+    font-size: 13px;
+    opacity: 60%;
+
+}
+
+.text-d{
+    font-size: 13px;
+    opacity: 60%;
+}
+
+
+
+
+.Jonathan{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.Jonathan img{
+    border-radius: 50%;
+}
+
+
+
+
+.Kira{
+    background-color: white;
+}
+
+.Kira img{
+    border-radius: 50%;
+}
+
+
+
+
+.Jeanette{
+    background-color: white;
+}
+
+.Jeanette img{
+    border-radius: 50%;
+}
+
+
+
+
+.Patrick{
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+.Patrick img{
+    border-radius: 50%;
+}
+.
