@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url(./fonts.css);
 
 * {
@@ -11,57 +10,65 @@
     font-family: "Roboto", serif;
 }
 
-header{
+body{
+    height: 100vh;
+}
+
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-nav ul{
+nav ul {
     font-weight: 700;
     display: flex;
     gap: 50px;
     padding-top: 5%;
     padding-bottom: 5%;
-    
 }
 
-.logo{
+.logo {
     display: flex;
     margin-right: 380px;
 }
 
-.icons{
+.icons {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.lock{
+.lock {
     margin-left: -5px;
     width: 36px;
     padding: 1px;
 }
 
-.container{
-    background-color: #F0EFEB;
+main {
+    background-color: hsl(46deg 16% 93%);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; 
 }
 
-.img{
-    display: flex;
-    align-items: end;
-    justify-content: end;
+h1 {
+    font-weight: 700;
+    font-size: 60px;
 }
 
+p {
+    font-size: 24px;
+    line-height: 28.13px;
+}
 
+.texts {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
-
-
-
-button{
+button {
     background-color: black;
     color: white;
     font-size: 17px;
@@ -69,5 +76,14 @@ button{
     width: 129px;
     height: 36px;
     border-radius: 100px;
+    margin-top: -20px;
 }
 
+/* 🛠 Adjusted Image Position */
+.main-photo {
+    display: flex;
+    justify-content: flex-end; 
+    position: relative;
+    top: -500px; /* Move image higher */
+    margin: 40px;
+}
