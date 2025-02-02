@@ -1,27 +1,55 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url(./fonts.css);
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
-    display: flex;
-    flex-direction: start;
-    height: 100vh;
-    font-family: Roboto;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", serif;
 }
 
 header{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul{
+    font-weight: 700;
+    display: flex;
+    gap: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+.logo{
+    display: flex;
+    margin-right: 380px;
+}
+
+.icons{
+    display: flex;
     /* justify-content: center; */
     align-items: center;
-
+    gap: 20px;
 }
 
-header img{
-    width: 5rem;
+.lock{
+    margin-left: -5px;
+    width: 36px;
+    padding: 1px;
 }
 
-main{
-    background-color:#F0EFEB;
+.container{
+    background-color: #F0EFEB;
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
