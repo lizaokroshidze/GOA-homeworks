@@ -79,11 +79,10 @@ button {
     margin-top: -20px;
 }
 
-/* 🛠 Adjusted Image Position */
 .main-photo {
     display: flex;
     justify-content: flex-end; 
     position: relative;
-    top: -500px; /* Move image higher */
+    top: -500px; 
     margin: 40px;
 }
