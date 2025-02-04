@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+/* 
+
+    font-family: "Big Shoulders Display", serif;
+
+    font-family: "Lexend Deca", serif;
+
+ */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #vehicle-descritptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #sedan {
+    background: hsl(31, 77%, 52%);
+    border-radius: 8px 0px 0px 8px;
+  }
+  
+  #suvs {
+    background: hsl(184, 100%, 22%);
+  }
+  
+  #luxury {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0px 8px 8px 0px;
+  }
+  
+  .description-card {
+    padding: 2.5rem;
+  }
+  
+  .description-card .vehicle-icon-container {
+    padding-bottom: 1.5rem;
+  }
+  
+  .description-card h3 {
+    font-family: 'Big Shoulders Display',
+      sans-serif;
+    color: #f2f2f2;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+  }
+  
+  .description-card p {
+    color: #fff;
+    font-family: 'Lexend Deca',
+      sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: .75;
+    width: 73%;
+  }
+  
+  .learn-more-btn {
+    width: 146px;
+    height: 42px;
+    border-radius: 25px;
+    border: 2px solid #f2f2f2;
+    background: #f2f2f2;
+    cursor: pointer;
+    font-family: 'Lexend Deca',
+      sans-serif;
+    font-size: 15px;
+    margin-top: 5rem;
+    transition: all .1s ease-in;
+  }
+  
+  .learn-more-btn:hover {
+    background: none;
+    color: #fff !important;
+  }
+  
+  #orange {
+    color: hsl(31, 77%, 52%);
+  }
+  
+  #cyan {
+    color: hsl(184, 100%, 22%);
+  }
+  
+  #dark-cyan {
+    color: hsl(179, 100%, 13%);
+  }
+  
+  /* 
+  
+  
+  
+  
+  
+  Media Queries
+  
+  
+  
+  
+  
+  */
+  
+  @media screen and (max-width: 1024px) {
+    .description-card p {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 766px) {
+  
+    #vehicle-descritptions {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 2rem;
+  
+    }
+  
+  
+    #sedan {
+      border-radius: 8px 8px 0px 0px;
+    }
+  
+  
+    #luxury {
+      border-radius: 0px 0px 8px 8px;
+    }
+  
+    .description-card p {
+      width: 70%;
+    }
+  
+  }
