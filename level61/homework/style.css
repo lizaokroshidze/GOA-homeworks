@@ -1,5 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* Center content in the header */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #fff;
+}
+
+/* Wrap header content */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Navigation menu styling */
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Logo styling */
+.logo img {
+    height: 50px;
+}
+
+/* Social links */
+.social-links img {
+    width: 24px;
+    margin-left: 10px;
+}
+
