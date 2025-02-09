@@ -205,48 +205,60 @@ main {
 /*  */
 
 #Books {
-
+    margin-top: 10rem;
     width: 100%;
     height: 1960px;
-
 }
 
 .french {
+    display: flex;
+    align-items: center; /* აწყობს ელემენტებს ცენტრში */
+    justify-content: center; /* მარცხნიდან დაწყება */
     background-color: rgba(204, 204, 204, 0.3);
     width: 100%;
     height: 652px;
-    display: flex;
-    flex-direction: row; /* Aligns content horizontally */
-    text-align: start;
-    justify-content: space-between; /* Creates space between image and text */
     padding: 20px;
+    flex-wrap: wrap;
 }
 
-.french img {
+.Photos img {
     width: 385px;
     height: 525px;
+    margin-right: 12rem; 
 }
 
-#Books h5 {
+.text-content {
+    display: flex;
+    flex-direction: column; /* ტექსტები ვერტიკალურად */ 
+    margin-left: -8rem;
+}
+
+.french h5 {
+    font-size: 36px;
+    line-height: 42.19px;
+    margin-bottom: 30px;
+}
+
+.our{
     font-size: 36px;
     line-height: 
     42.19px;
-
+    font-weight: 400;
 }
 
 .Shop {
     font-weight: 700;
     font-size: 17px;
     text-decoration: underline;
-    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    cursor: pointer;
+    margin-top: 30px;
 }
 
-.french p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 500px; /* Limits the width of the paragraph */
-}
+/*  */
 
-.french .Shop {
-    margin-top: 15px;
+
+.Culture{
+    background-color:rgba(204, 204, 204, 0.6);
+    display: flex;
+    flex-direction: row-reverse;
 }
