@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 11.14 100.23 11.14 100.23;
+}
+
+.Logo{
+    width: 107.54px;
+    height: 16.71px;
+}
+
+.all-header{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    color: rgba(77, 77, 77, 1);
+    gap: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height:
+    16.71px ;
+    margin-top: 10px;
+    margin-right: 13px;
+}
+
+#Home{
+    margin-right: 20px;
+}
+
+.nav-bar{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar button{
+    background-color:rgba(76, 175, 79, 1);
+    border: none;
+    width: 133.25px;
+    height: 36.49px;
+    color: white;
+    font-size: 12.14px;
+    text-align: center;
+    border-radius: 2.78px;
+    padding: 9.74px 22.27px 9.74px 22.27px;
+}
+
+.nav-bar button img{
+    width: 12px;
+    height: 8px;
+    margin-top: 4px;
+}
+
+/* SECTION 1 */
+
+.hero{
+    width: 100%;
+    height: 416.95px;
+    background-color: rgb(245 247 250);
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+    margin-left: 180px;
+}
+
+.hero-text h1{
+    font-size: 44.55px;
+    font-weight: 600;
+    line-height: 52.9px;
+}
+
+.hero-text span{
+    color: rgba(76, 175, 79, 1);   
+}
+
+.hero-text p{
+    font-size: 11.14px;
+    font-weight: 400;
+    color:rgba(113, 113, 113, 1);
+}
+
+.hero-text button{
+    width: 89.55px;
+    height: 36.49px;
+    border: none;
+    color: white;
+    gap: 6.96px;
+    border-radius: 2.78px;
+    background-color: rgba(76, 175, 79, 1);
+    font-size: 11.14px;
+}
+
+.illustration-hero{
+    display: flex;
+    justify-content: end;
+}  
+
+
+.hero {
+    width: 100%;
+    height: 417px;
+    background-color: rgb(245, 247, 250);
+    display: flex;
+    gap: 200px; 
+    position: relative;
+    /* Space between text and image */
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+    margin-left: 180px;
+}
+
+.hero-text h1{
+    font-size: 44.55px;
+    font-weight: 600;
+    line-height: 52.9px;
+    /* margin-top: 30px; */
+}
+
+.hero-text span{
+    color: rgba(76, 175, 79, 1);   
+}
+
+.hero-text p{
+    font-size: 11.14px;
+    font-weight: 400;
+    color:rgba(113, 113, 113, 1);
+}
+
+.hero-text button{
+    width: 89.55px;
+    height: 36.49px;
+    border: none;
+    color: white;
+    gap: 6.96px;
+    border-radius: 2.78px;
+    background-color: rgba(76, 175, 79, 1);
+    font-size: 11.14px;
+}
+
+
+.illustration-hero{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 250px;
+    width: 300px;
+    height: 300px;
+}
+
+.circle{
+    display: flex;
+    gap: 5.57px;
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+}
+
+.circle div{
+    width: 6.96px;
+    height: 6.96px;
+    background: rgba(76, 175, 79, 1);
+    border-radius: 50%;
+} 
+
+/* 
+ */
+
+.clients{
+    text-align: center;
+}
+
+.text-clients h1{
+    color: rgba(77, 77, 77, 1);
+    font-size: 25.06px;
+    line-height: 30.63px;
+    font-weight: 600;
+}
+
+.text-clients p{
+    color:rgba(113, 113, 113, 1);
+    font-size: 12px;
+    line-height: 16.71px;
+    font-weight: 400;
+}
+
+.clients-logo {
+}
+
+
+
