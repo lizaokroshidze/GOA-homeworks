@@ -1,7 +1,7 @@
-var a = 5;
-var b = 3;
-var c = 4;
-var d = 6;
+var a = 5
+var b = 3
+var c = 4
+var d = 6
 
 console.log(a + " + " + b + " = " + (a + b))
 console.log(a + " + " + c + " = " + (a + c))
