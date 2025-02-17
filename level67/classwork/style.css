@@ -53,7 +53,7 @@ header button{
 }
 
 .sec-1{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,81 +199,3 @@ header button{
     color:rgba(113, 113, 113, 1);
     text-align: center;
 }
-
-
-.sec-4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.text-4 h3{
-    width: 418.34px;
-    color: rgba(77, 77, 77, 1);
-    font-size: 
-    25.06px;
-    font-weight: 600;
-    line-height: 30.63px;
-}
-
-.text-4 p{
-    width: 418.34px;
-    margin-top: 10px;
-    color: rgba(113, 113, 113, 1);
-    font-size: 9.74px;
-    line-height: 13.92px;
-    font-weight: 400;
-}
-
-.text-4 button{
-    border: none;
-    color: white;
-    font-size: 11.14px;
-    background-color: rgba(76, 175, 79, 1);
-    padding: 9.74px  22.27px 9.74px  22.27px;
-    border-radius: 2.78px;
-    margin-top: 20px;
-}
-
-.sec-5{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(245, 247, 250, 1);
-    padding: 44.55px 100.23px 44.55px 100.23px;
-    height: 202.94px;
-}
-
-.sec-5 h3{
-    font-size: 25.06px;
-    font-weight: 600;
-    line-height: 30.63px;
-}
-
-.sec-5 h3 span{
-    color: rgba(76, 175, 79, 1);
-}
-
-.sec-5 p{
-    color: rgba(24, 25, 31, 1);
-    font-size: 11.14px;
-    line-height: 16.71px;
-    font-weight: 400;
-    width: 375.88px;
-    margin-top: 8px;
-    opacity: 80%;
-}
-
-
-
-
-/* .text-55{
-    display: flex;
-}
-
-.text-555{
-    display: flex;
-    flex-direction: column;
-} */
-
