@@ -3,3 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.sec-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.sec-6-pa{
+    display: flex;
+    flex-direction: column;
+    gap: 22.27px;
+    align-items: start;
+}
+
+.sec-6 h1{
+    font-family: ;
+    font-size: 25.06px;
+    line-height: 30.63px;
+    font-weight: 600;
+    color: #;
+}
+
+.sec-6 p{
+    font-size: 9.74px;
+    font-weight: 400;
+    line-height: 13.92px;
+}
+
+.sec-6-button{
+    border-radius: 2.78px;
+    padding-top: 9.74px;
+    padding-bottom: 9.74px;
+    padding-right: 22.27px;
+    padding-left: ;
+}
+
+
+
