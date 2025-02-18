@@ -420,17 +420,87 @@ header button{
     margin-bottom: 1rem;
 }
 
-
 .cards{
     display: flex;
-    justify-content: space-between;
+    padding-bottom: 5rem;
 }
 
-.card {
+.card-1 {
     position: relative;
-    width: 300px; /* შეცვალე საჭიროების მიხედვით */
+    width: 300px; /* ბარათის სიგანე */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* ტექსტის სტილი */
+.card-content p {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+/* Read More ლინკი */
+.cards a {
+    color: rgb(76, 175, 79);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+
+.sec-9 {
+    font-weight: 600;
+    font-size: 44.55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sec-9 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sec-9 button{
+    border: none;
+    border-radius: 2.78px;
+    background-color: rgba(76, 175, 79, 1);
+    font-size: 11.14px;
+    color: white;
+    padding: 9.74px 22.27px  9.74px 22.27px  ;
+}
+
+
+/* .sec-9{
+    font-weight: 600;
+    font-size: 44.55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 617.4136352539062px;
+}
+
+.sec-9 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+
