@@ -503,4 +503,19 @@ header button{
     text-align: center;
 } */
 
+footer{
+    background-color: rgba(38, 50, 56, 1);
+    height: 229.21389770507812px;
+    padding: 44.55px 114.85px 44,55px 114.85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 87,01px;
+    color: #F5F7FA;
+}
 
+
+.empty{
+    width: 200px;
+    height: 300px;
+}
