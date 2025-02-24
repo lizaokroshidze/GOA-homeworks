@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Roboto", serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: "Inter", serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    color: #2F3A3B;
+    font-size: 14px;
+}
+
+.header-sign{
+    display: flex;
+    /* gap: 30px; */
+}
+
+.in , .up{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    color: #494949;
+    font-weight: 400;
+}
+
+.up{
+    color: #003478;
+    border: 1px solid #003478;
+    font-weight: 600;
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.lines{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 15px;
+    position: relative;
+}
+
+.lines div{
+    width: 100%;
+    height: 66px;
+    background-color: #303231;
+    color: white;
+}
+
+.mustang-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.mustang-container img{
+    position: absolute;
+    /* z-index: -1; */
+    right: -600px;
+    top: 50%;
+    transform: translateY(-52.1%);
+}
+
+.hero-text{
+    position: relative;
+    z-index: 111;
+    left: 7.6%;
+    top: 0;
+}
