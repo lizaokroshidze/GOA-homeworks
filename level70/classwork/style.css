@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* font-family: "Roboto", serif; */
+@import url('https://fonts.cdnfonts.com/css/sansation');
+
+ @import url('https://fonts.cdnfonts.com/css/sansation-light');
+
+                
+
+
+/* 
+
+font-family: 'Sansation Light', sans-serif;
+                                                
+font-family: 'Sansation Light', sans-serif;
+                                                
+*/
+
+
 
 *{
     margin: 0;
@@ -13,12 +28,17 @@ body{
     font-family: "Inter", serif;
 }
 
+
+/* HEADER */
+
 header{
     width: 100%;
     display: flex;
     padding: 20px 50px;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    z-index: 999;
 }
 
 nav ul{
@@ -48,30 +68,34 @@ nav ul{
     font-weight: 600;
 }
 
+
+
+/*  MAIN */
+
 .hero{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 90vh;
 }
 
 .lines{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; 
+    justify-content: flex-start;
     align-items: start;
     width: 100%;
-    gap: 15px;
+    gap: 16px;
     position: relative;
+    /* z-index: 3; */
 }
 
 .lines div{
     width: 100%;
     height: 66px;
     background-color: #303231;
-    color: white;
+    color: #fff;
 }
 
 .mustang-container{
@@ -82,15 +106,92 @@ nav ul{
 
 .mustang-container img{
     position: absolute;
-    /* z-index: -1; */
     right: -600px;
     top: 50%;
-    transform: translateY(-52.1%);
+    transform: translateY(-52.2%);
+}
+    
+.hero-text{
+    position: absolute;
+    z-index: 111;
+    /* left: 7.6%; */
+    top: 50%;
+    transform: translateY(-66%);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 50px;
+    left: 10%;
 }
 
-.hero-text{
-    position: relative;
-    z-index: 111;
-    left: 7.6%;
-    top: 0;
+/* .hero-text-owner{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+} */
+
+.hero-text h1{
+    font-family: 'Sansation', sans-serif;                           
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 68px;
+    color: #152137 ;
 }
+
+.hero-text h1 span{
+    font-family: 'Sansation Light', sans-serif;
+    color: rgb(251 169 15);
+    font-weight: 700;
+}
+
+
+.hero-text p{
+    font-family: 'Sansation Light', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68px;
+    color: white;
+}
+
+.hero-text p span{
+    font-family: 'Sansation Light', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 68px;
+
+}
+
+.hero-text div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-text div button {
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: #003478;
+    padding: 20px 50px;
+    position: relative;
+    top: 40px; /* აი, ეს თვისება გამოიყენებს ღილაკის ქვემოთ გადაყვანას */
+}
+
+
+#different{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #28344A;
+}
+
+.different-img{
+    border-radius: 50%;
+    padding: 18px;
+    background-color: #003478;
+}
+
