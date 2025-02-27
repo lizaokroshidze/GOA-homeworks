@@ -78,6 +78,7 @@ nav ul{
     justify-content: center;
     align-items: center;
     height: 90vh;
+    overflow: hidden;
 }
 
 .lines{
@@ -109,8 +110,8 @@ nav ul{
     right: -600px;
     top: 50%;
     transform: translateY(-52.2%);
-}
-    
+}  
+
 .hero-text{
     position: absolute;
     z-index: 111;
@@ -124,13 +125,6 @@ nav ul{
     gap: 50px;
     left: 10%;
 }
-
-/* .hero-text-owner{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 50px;
-} */
 
 .hero-text h1{
     font-family: 'Sansation', sans-serif;                           
@@ -195,3 +189,209 @@ nav ul{
     background-color: #003478;
 }
 
+/* section 2 */
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-2-header p{
+    font-family: 'Sansation', sans-serif;
+    font-size: 36px;
+    color: white;
+    background-color: #303231;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 85px;
+    line-height: 40.29px;
+    font-weight: 400;
+} 
+
+.gtv{
+    font-family: "Inter", serif;
+    font-size: 24px;
+    color: #303231;
+    text-align: center;
+    line-height: 29.05px;
+    margin-top: 40px;
+}
+
+.squares-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: "Inter", serif;
+}
+
+.rotation-lines {
+    color: #BCBCBC;
+    width: 211px;
+    border: 1px solid #BCBCBC;
+    transform: rotate(-90deg); 
+}
+
+
+.build{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.place{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.circle-1 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #5046C7;
+    color: white;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+.build .p-1 {
+    color: #233443;        
+    font-size: 18px;      
+    font-weight: 600;     
+}
+
+.build p{
+    color: #333333;
+    font-size: 18px;
+    line-height: 21.78px;
+    text-align: center;
+}
+
+.build button{
+    color: #FF6645;
+    font-size: 14px;
+    line-height: 16.94px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+}
+
+
+.share{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.share .p-2 {
+    color: #233443;        
+    font-size: 18px;      
+    font-weight: 600;     
+}
+
+.circle-2 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #FF6645;
+    color: white;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+
+.share p{
+    color: #333333;
+    font-size: 18px;
+    line-height: 21.78px;
+    text-align: center;
+}
+
+.share button{
+    color: #FF6645;
+    font-size: 14px;
+    line-height: 16.94px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+.place{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.place .p-3 {
+    color: #233443;        
+    font-size: 18px;      
+    font-weight: 600;     
+}
+
+.circle-3 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #81D9F8;
+    color: white;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+
+.place p{
+    color: #333333;
+    font-size: 18px;
+    line-height: 21.78px;
+    text-align: center;
+}
+
+.place button{
+    color: #FF6645;
+    font-size: 14px;
+    line-height: 16.94px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+}
