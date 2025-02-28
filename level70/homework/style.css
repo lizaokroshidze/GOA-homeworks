@@ -12,6 +12,8 @@
 font-family: 'Sansation Light', sans-serif;
                                                 
 font-family: 'Sansation Light', sans-serif;
+
+font-family: "Inter", serif;
                                                 
 */
 
@@ -225,7 +227,7 @@ nav ul{
     align-items: center;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-family: "Inter", serif;
 }
 
@@ -271,7 +273,7 @@ nav ul{
     font-weight: 600;
     line-height: 48px;
     text-align: center; 
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .build .p-1 {
@@ -285,6 +287,7 @@ nav ul{
     font-size: 18px;
     line-height: 21.78px;
     text-align: center;
+    margin-bottom: 28px;
 }
 
 .build button{
@@ -325,7 +328,7 @@ nav ul{
     font-weight: 600;
     line-height: 48px;
     text-align: center; 
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 
@@ -334,6 +337,7 @@ nav ul{
     font-size: 18px;
     line-height: 21.78px;
     text-align: center;
+    margin-bottom: 28px;
 }
 
 .share button{
@@ -376,7 +380,7 @@ nav ul{
     font-weight: 600;
     line-height: 48px;
     text-align: center; 
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 
@@ -385,6 +389,7 @@ nav ul{
     font-size: 18px;
     line-height: 21.78px;
     text-align: center;
+    margin-bottom: 28px;
 }
 
 .place button{
@@ -395,3 +400,159 @@ nav ul{
     background-color: transparent;
     border: none;
 }
+
+.custom{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.custom a{
+    background-color: #003478;
+    color: white;
+    text-decoration: none;
+    width: 274px;
+    height: 54px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 21.78px;
+}
+
+.custom .coe{
+    background-color: transparent;
+    color: #0276B3;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 21.78px;
+}
+
+
+.block-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    gap: 200px;
+}
+
+.at{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 275px;
+    height: 142px;
+    text-align: center;
+    box-shadow: 0px 12px 46px 0px #4B4B4B21;
+    border-radius: 10px;
+}
+
+.at .starting-at{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    color: #233443;
+}
+
+.at p{
+    font-size: 52px;
+    line-height: 62.93px;
+    text-align: center;
+    color: #333333;
+}
+
+.epa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 275px;
+    height: 142px;
+    text-align: center;
+    box-shadow: 0px 12px 46px 0px #4B4B4B21;
+    border-radius: 10px;
+}
+
+.epa .epa-est{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    color: #233443;
+}
+
+.epa p{
+    font-size: 52px;
+    line-height: 62.93px;
+    text-align: center;
+    color: #333333;
+}
+
+.seat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 275px;
+    height: 142px;
+    text-align: center;
+    box-shadow: 0px 12px 46px 0px #4B4B4B21;
+    border-radius: 10px;
+}
+
+.seat .Seating-for{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    color: #233443;
+}
+
+.seat p{
+    font-size: 52px;
+    line-height: 62.93px;
+    text-align: center;
+    color: #333333;
+}
+
+.sec-3-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #303231;
+    height: 85px;
+}
+
+.sec-3-header p{
+    font-family: 'Sansation', sans-serif; 
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 40.29px;
+    text-align: center;
+} 
+
+.supercharged-5-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", serif;
+    font-size: 24px;
+    line-height: 34.93px;
+    text-align: center;
+    color: #303231;
+    margin-top: 50px;
+    margin-bottom: 100px ;
+}
+
