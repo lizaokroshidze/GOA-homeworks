@@ -526,7 +526,8 @@ nav ul{
     color: #333333;
 }
 
-.sec-3-header{
+
+.sec-3-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -535,24 +536,87 @@ nav ul{
     height: 85px;
 }
 
-.sec-3-header p{
-    font-family: 'Sansation', sans-serif; 
+.sec-3-header p {
+    font-family: 'Sansation', sans-serif;
     color: #FFFFFF;
     font-size: 36px;
     line-height: 40.29px;
     text-align: center;
-} 
+}
 
-.supercharged-5-2{
+.supercharged-5-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Inter", serif;
+    font-family: "Inter", serif; /* Make sure you have the "Inter" font available */
     font-size: 24px;
     line-height: 34.93px;
     text-align: center;
     color: #303231;
     margin-top: 50px;
-    margin-bottom: 100px ;
+    margin-bottom: 100px;
+}
+
+.container-1 {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center;
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 1166px;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.text-content-1 {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content-1 .boost-p {
+    font-family: 'Sansation', sans-serif;
+    font-size: 36px;
+    line-height: 40.29px;
+    color: #303231;
+}
+
+.text-content-1 p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 40px;
+    font-family: "Inter", serif;
+}
+
+.text-content-1 ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.text-content-1 ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Inter", serif;
+}
+
+.text-content-1 ul li svg {
+    width: 14.000223159790039px;
+    height: 10.26910400390625px;
+    background-color: #3F6745;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: content-box;
+    margin-right: 20px;
+}
+
+.image-content-1 {
+    flex: 1;
+    text-align: right;
+}
+
+.image-content-1 img {
+    max-width: 100%;
+    height: auto;
 }
 
