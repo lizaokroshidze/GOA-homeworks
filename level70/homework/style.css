@@ -173,7 +173,7 @@ nav ul{
     background-color: #003478;
     padding: 20px 50px;
     position: relative;
-    top: 40px; /* აი, ეს თვისება გამოიყენებს ღილაკის ქვემოთ გადაყვანას */
+    top: 40px;
 }
 
 
@@ -548,7 +548,7 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Inter", serif; /* Make sure you have the "Inter" font available */
+    font-family: "Inter", serif;
     font-size: 24px;
     line-height: 34.93px;
     text-align: center;
@@ -559,12 +559,13 @@ nav ul{
 
 .container-1 {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
     justify-content: center;
     font-family: sans-serif;
     width: 100%;
     max-width: 1166px;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto;
+    margin-bottom: 150px;
 }
 
 .text-content-1 {
@@ -620,3 +621,203 @@ nav ul{
     height: auto;
 }
 
+
+
+.container-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 1167px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    gap: 150px;
+}
+
+.text-content-2 {
+    margin-top: 150px;
+    flex: 1; 
+    text-align: left; 
+}
+
+.text-content-2 .gt {
+    font-size: 36px;
+    color: #303231;
+    font-family: 'Sansation', sans-serif;
+    line-height: 40.29px;
+    margin-bottom: 40px;
+}
+
+.text-content-2 p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    font-family: "Inter", serif;
+}
+
+.text-content-2 ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.text-content-2 ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Inter", serif;
+}
+
+.text-content-2 ul li svg {
+    width: 14.000223159790039px;
+    height: 10.26910400390625px;
+    background-color: #3F6745;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: content-box;
+    margin-right: 20px;
+}
+
+.image-content-2 {
+    flex: 1;
+}
+
+.image-content-2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.container-3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 1184px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    gap: 150px;
+}
+
+.text-content-3 {
+    flex: 1;
+    text-align: left;
+}
+
+.text-content-3 .mach{
+    font-size: 36px;
+    color: #303231;
+    font-family: 'Sansation', sans-serif;
+    line-height: 40.29px;
+    margin-bottom: 40px;
+}
+
+.text-content-3 p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    font-family: "Inter", serif;
+}
+
+.text-content-3 ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.text-content-3 ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Inter", serif;
+}
+
+.text-content-3 ul li svg {
+    width: 14.000223159790039px;
+    height: 10.26910400390625px;
+    background-color: #3F6745;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: content-box;
+    margin-right: 20px;
+}
+
+.image-content-3 {
+    flex: 1;
+}
+
+.image-content-3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container-4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 1184px;
+    margin: 0 auto;
+    gap: 150px;
+}
+
+.text-content-4 {
+    flex: 1;
+    text-align: left;
+}
+
+.text-content-4 .shel{
+    font-size: 36px;
+    color: #303231;
+    font-family: 'Sansation', sans-serif;
+    line-height: 40.29px;
+    margin-bottom: 40px;
+}
+
+.text-content-4 p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    font-family: "Inter", serif;
+}
+
+.text-content-4 ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.text-content-4 ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Inter", serif;
+}
+
+.text-content-4 ul li svg {
+    width: 14.000223159790039px;
+    height: 10.26910400390625px;
+    background-color: #3F6745;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: content-box;
+    margin-right: 20px;
+}
+
+.image-content-4 {
+    flex: 1;
+}
+
+.image-content-4 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-content-4 .onthe { 
+    margin-top: 40px;
+}
