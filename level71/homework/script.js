@@ -31,3 +31,53 @@ console.log("Max Number in the list: " + max)
 console.log("Min Number in the list: " + min)
 
 
+// 
+
+let words = [ 'apple', 'banana', 'orange', 'kiwi', 'watermelon']
+
+let firstleteers = []
+
+for ( let i = 0; i < words.length; i++){
+    firstleteers.push(words[i][0])
+}
+
+console.log("First letters: " + firstleteers)
+
+
+// 
+
+let Users = ['Liza Okroshidze', 'Niko Okroshidze', 'Melano Gogoladze']
+let initials = []
+
+for (let i = 0; i < Users.length; i++) {
+  let names = Users[i].split(" ")
+  initials.push(names[0][0] + "." + names[1][0])
+}
+
+console.log("Initials: " + initials)
+
+
+// 
+
+let numbersWithNegatives = [1, -2, 3, -4, 5]
+
+for (let i = 0; i < numbersWithNegatives.length; i++) { 
+  if (numbersWithNegatives[i] < 0) { 
+    numbersWithNegatives.splice(i, 1, 0)
+  }
+}
+
+console.log("Changed arr: " + numbersWithNegatives)
+
+// 
+
+let userNames = ['Liza Okroshidze', 'niko Okroshidze', 'Melano Gogoladze'] 
+
+for (let i = userNames.length - 1; i >= 0; i--) { 
+  const names = userNames[i].split(" ")
+  if (names[0][0] !== names[0][0].toUpperCase() || names[1][0] !== names[1][0].toUpperCase()) {
+    userNames.splice(i, 1) 
+  }
+}
+
+console.log("Changed list : " + userNames)
