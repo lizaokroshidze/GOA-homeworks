@@ -869,3 +869,95 @@ nav ul{
 
 /* section 5 */
 
+/* .text-content-5 .fordpass{
+    font-family: 'Sansation', sans-serif;
+    font-size: 36px;
+    line-height: 40.29px;
+}
+
+.text-content-5 p {
+    width: 100%;
+    max-width: 574px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 40.77px;
+    font-family: "Inter", serif;
+}
+
+.text-content-5 a{
+    font-size: 18px;
+    color: white;
+    font-family: "Inter", serif;
+    line-height: 21.78px;
+    text-align: center;
+    background-color: #003478;
+    text-decoration: none;
+    padding: 18px 80px;
+}
+
+
+.images-cont{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.images-cont img{
+    position: absolute;
+    right: -600px;
+    top: 50%;
+    transform: translateY(-52.2%);
+}   */
+
+
+
+
+.sec-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    width: 2067px;
+    margin-top: 100px;
+    height: 740px;
+}
+
+.text-content-5 {
+    width: 604px;
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content-5 .fordpass {
+    font-family: 'Sansation', sans-serif;
+    font-size: 36px;
+    line-height: 40.29px;
+}
+
+.text-content-5 p {
+    width: 100%;
+    max-width: 604px;
+    font-size: 18px;
+    line-height: 40.77px;
+    color: #333333;
+    margin-bottom: 40.77px;
+    font-family: "Inter", serif;
+}
+
+.text-content-5 a {
+    font-size: 18px;
+    color: white;
+    font-family: "Inter", serif;
+    line-height: 21.78px;
+    text-align: center;
+    background-color: #003478;
+    text-decoration: none;
+    padding: 18px 80px;
+}
+
+  
