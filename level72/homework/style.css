@@ -922,7 +922,6 @@ nav ul{
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
-    width: 2067px;
     margin-top: 100px;
     height: 740px;
 }
@@ -960,4 +959,101 @@ nav ul{
     padding: 18px 80px;
 }
 
-  
+/* 
+footer{
+    background-color: #151515;
+    color: white;
+} */
+
+footer {
+    position: relative; 
+    padding: 50px 20px; 
+    background: #1a1a1a; 
+    color: white;
+    height: 880px;
+    overflow: hidden; 
+}
+
+.last-img {
+    position: absolute;
+    right: 0; 
+    top: 15%; 
+    height: 100%; 
+    z-index: 1; 
+}
+
+.last-img img {
+    height: 584px;
+    object-fit: cover; 
+}
+
+.foot-1-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.foot-1-text, .footer-a {
+    position: relative;
+    z-index: 2; 
+}
+
+.foot-1-text :first-child{
+    font-size: 54px;
+    font-family: 'Sansation', sans-serif;
+    line-height: 60.43px;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+.foot-1-text span{
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #848484;
+    font-family: "Inter", serif;
+}
+
+.foot-1-text p{
+    font-size: 18px;
+    line-height: 40.77px;
+    font-family: "Inter", serif;
+    margin-top: 50px;
+}
+
+.foot-1-text a {
+    text-decoration: none;
+    color: white;
+    background-color: #003478;
+    text-align: center;
+    padding: 18px 80px;
+    margin-top: 50px;
+    width: 314px;
+}
+
+.footer-a {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.footer-a a {
+    margin-left: 20px; /* ლინკებს შორის დაშორება */
+}
+
+.footer-line {
+    width: 878px; 
+    border: 1px solid #2C2C2C;
+    margin: 0 auto; /* ეს მხოლოდ ამ ელემენტს გააცენტრებს */
+    margin-top: 40px;
+}
+
+.last-p{
+    color: #4F4F4F;
+    font-size: 12px;
+    font-weight: 14.52px;
+    text-align: center;
+    margin-top: 30px;
+}
