@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* ფიქსირებული */
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* მეტი სივრცე ელემენტებს შორის */
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+    border-radius: 20px; 
+    padding: 20px; 
+}
+
+h1 {
+    font-size: 40px;
+    background-color: hotpink;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    background: transparent;
+    border: none;
+    background-color: hotpink;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: hotpink;
+    transform: scale(1.05);
+}
