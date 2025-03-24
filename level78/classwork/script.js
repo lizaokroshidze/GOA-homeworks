@@ -1,34 +1,41 @@
+// querySelector  queryselectorall()
 
-document.body.innerHTML += `
-  <p class="text">Hello, world!</p>
-  <p class="text">Hello, world!</p>
-  <p class="text">Hello, world!</p>
-`;
 
-document.querySelector(".text").style.color = "blue";
 
-document.querySelectorAll(".text").forEach((element) => {
-  element.style.fontSize = "20px";
-  element.style.fontWeight = "bold";
-});
+// let p = document.querySelector("p")
+// p.style.color = "red"
 
-const parentDiv = document.createElement("div");
-parentDiv.style.display = "flex";
-parentDiv.style.flexDirection = "column";
-parentDiv.style.gap = "20px";
-parentDiv.style.alignItems = "center";
-parentDiv.style.marginTop = "20px";
+// let h1 = document.querySelectorAll("h1")
 
-const redDiv = document.createElement("div");
-redDiv.style.width = "100px";
-redDiv.style.height = "100px";
-redDiv.style.backgroundColor = "red";
+// h1[0].style.color = "blue"
+// h1[1].style.color = "green"
 
-const greenDiv = document.createElement("div");
-greenDiv.style.width = "100px";
-greenDiv.style.height = "100px";
-greenDiv.style.backgroundColor = "green";
 
-parentDiv.appendChild(redDiv);
-parentDiv.appendChild(greenDiv);
-document.body.appendChild(parentDiv);
+
+// let p = document.querySelector(".paragraph")
+// let h1 = document.querySelector(".heading")
+
+// p.style.color = "pink"
+
+
+// createElement appendChild
+
+// let body = document.body
+
+// let parentDiv = document.createElement("div")
+
+// body.appendChild(parentDiv)
+
+// parentDiv.style.width = "100px"
+// parentDiv.style.height = "100px"
+// parentDiv.style.backgroundColor = "red"
+
+
+let body = document.body
+
+let img = document.createElement("img")
+
+body.appendChild(img)
+
+img.src = "https://i5.walmartimages.com/seo/Fresh-Gala-Apple-Each_f46d4fa7-6108-4450-a610-cc95a1ca28c5_3.38c2c5b2f003a0aafa618f3b4dc3cbbd.jpeg" 
+img.style.width = "500px"
