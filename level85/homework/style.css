@@ -22,7 +22,7 @@ h1 {
     letter-spacing: 5px;
     animation: glow 1.5s ease-in-out infinite alternate;
     text-transform: uppercase;
-    margin-bottom: 50px; /* Add space between h1 and the buttons */
+    margin-bottom: 50px;
 }
 
 .Drum {
@@ -81,7 +81,7 @@ h1 {
     font-family: "Anton", sans-serif;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    background-color: #16213E;  /* Deep Blue */
+    background-color: #16213E;
     padding: 15px;
     border-radius: 5px;
     margin-top: 30px;
