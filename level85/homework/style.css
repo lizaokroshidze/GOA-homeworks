@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(to right, #2a2a84, #16213E);
+    font-family: 'Anton', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    color: white;
+    text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff4500, 0 0 70px #ff6347, 0 0 80px #ff6347;
+    letter-spacing: 5px;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    text-transform: uppercase;
+    margin-bottom: 50px; /* Add space between h1 and the buttons */
+}
+
+.Drum {
+    outline: none;
+    border: none;
+    font-size: 4rem;
+    line-height: 2;
+    font-weight: 900;
+    text-shadow: 3px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 15px;
+    background-color: #0F3460;
+    position: relative;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.2s;
+}
+
+.Drum:hover {
+    background-color: #FF6347;
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(255, 99, 71, 0.3);
+}
+
+.Drum:active {
+    transform: scale(0.95);
+}
+
+.Drum span {
+    display: block;
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.Drum.pressed {
+    background-color: #FF6347;
+    transform: scale(0.95);
+    box-shadow: 0 15px 25px rgba(255, 99, 71, 0.5);
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.Drum span {
+    font-size: 0.8rem;
+    color: white;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.good-luck-text {
+    font-size: 1.5rem;
+    font-family: "Anton", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    background-color: #16213E;  /* Deep Blue */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.premium-sound-btn {
+    background-color: #ff6347; 
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: 2px solid #ff4500;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.premium-sound-btn:hover {
+    background-color: #ff4500;
+    transform: scale(1.1); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.premium-sound-btn:active {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff4500, 0 0 70px #ff6347, 0 0 80px #ff6347;
+    }
+    20% {
+        text-shadow: 0 0 30px #ff6347, 0 0 50px #ff6347, 0 0 70px #ff4500, 0 0 90px #ff4500;
+    }
+    40% {
+        text-shadow: 0 0 40px #ff6347, 0 0 60px #ff4500, 0 0 90px #ff6347, 0 0 120px #ff0000;
+    }
+    60% {
+        text-shadow: 0 0 50px #ff6347, 0 0 70px #ff6347, 0 0 100px #ff4500, 0 0 150px #ff6347;
+    }
+    80% {
+        text-shadow: 0 0 60px #ff4500, 0 0 80px #ff6347, 0 0 120px #ff6347, 0 0 150px #ff0000;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff4500, 0 0 70px #ff6347, 0 0 80px #ff6347;
+    }
+}

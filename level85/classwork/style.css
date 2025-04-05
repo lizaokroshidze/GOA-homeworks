@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#idk{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #29324a;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+
+.img-cont{
+    border: 15px solid #53607c;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d90464;
+    text-shadow: 1px -0px #fff;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+#head{
+    font-size: 50px;
+}
+
+.one{
+    background-image: url(images/crash.png);
+    background-size: cover;
+}
+
+.two{
+    background-image: url(images/kick.png);
+    background-size: cover;
+}
+
+.three{
+    background-image: url(images/snare.png);
+    background-size: cover
+}
+
+.four{
+    background-image: url(images/tom1.png);
+    background-size: cover;
+}
+
+.five{
+    background-image: url(images/tom2.png);
+    background-size: cover;
+}
+
+.six{
+    background-image: url(images/tom3.png);
+    background-size: cover;
+}
+
+.seven{
+    background-image: url(images/tom4.png);
+    background-size: cover;
+}
