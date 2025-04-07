@@ -1,6 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Bebas Neue", sans-serif;
@@ -9,53 +13,55 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
+    background-color: #1995AD; /* Light background color */
 }
 
 .calculator {
-    background-color: #fff;
+    background-color: #A1D6E2;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 350px; /* Increased width */
-    text-align: center;
-}
+    text-align: center; 
+} 
 
 h2 {
     margin-bottom: 20px;
     font-size: 24px;
 }
 
+/* Flex style for the buttons and input fields to be side by side */
 input, select, button {
     width: 100%;
     padding: 15px; /* Increased padding for larger input fields */
     margin: 10px 0;
-    border: 2px solid #ddd;
+    border: 1px solid #1995AD;
     border-radius: 5px;
     font-size: 18px;
-    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+input, select, button:hover {
+    cursor: pointer;
+    border: 1px solid #1995AD;
+}
+
+input:focus, select:focus, button:focus {
+    outline: none;
+    border: 1px solid #1995AD;
 }
 
 button {
-    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    background-color: #1995AD;
     color: white;
     cursor: pointer;
-    font-size: 20px; /* Bigger font for better visibility */
+    font-size: 20px;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #49a9bc;
 }
 
 #result {

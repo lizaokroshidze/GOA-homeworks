@@ -36,3 +36,10 @@ function simpleCalculator() {
             resultDiv.innerHTML = "Invalid operation!";
     }
 }
+
+function resetCalculator() {
+    document.getElementById("num1").value = "";
+    document.getElementById("num2").value = "";
+    document.getElementById("operation").value = "";
+    document.getElementById("result").innerHTML = "";
+}
