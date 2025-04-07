@@ -12,8 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-color: #1995AD; /* Light background color */
+    background-color: #1995AD;
 }
 
 .calculator {
@@ -21,19 +20,23 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px; /* Increased width */
+    width: 380px;
     text-align: center; 
 } 
 
-h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
+h1 {
+    margin: 20px;
+    font-size: 30px;
 }
 
-/* Flex style for the buttons and input fields to be side by side */
+p {
+    margin: 5px;
+    font-size: 18px;
+}
+
 input, select, button {
     width: 100%;
-    padding: 15px; /* Increased padding for larger input fields */
+    padding: 15px;
     margin: 10px 0;
     border: 1px solid #1995AD;
     border-radius: 5px;
@@ -65,7 +68,7 @@ button:hover {
 }
 
 #result {
-    margin-top: 20px;
+    margin: 20px;
     font-size: 20px;
     font-weight: bold;
     color: #333;
