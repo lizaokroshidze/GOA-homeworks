@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Dice Roll Game (First to 100)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Two Dice Roll Game</h1>
+        <p class="goal">First player to reach <span>100</span> points wins!</p>
+
+        <div class="players">
+            <!-- Player 1 Panel -->
+            <div class="player player-0 active">
+                <h2>Player 1</h2>
+                <div class="player-score" id="score-0">0</div>
+            </div>
+
+            <!-- Player 2 Panel -->
+            <div class="player player-1">
+                <h2>Player 2</h2>
+                <div class="player-score" id="score-1">0</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="turn-indicator" id="turn-indicator">Player 1's Turn</div>
+
+            <div class="dice-area">
+                 <!-- Dice 1 -->
+                <div class="dice" id="dice-1">
+                    <span id="dice-face-1">?</span>
+                </div>
+                 <!-- Dice 2 -->
+                <div class="dice" id="dice-2">
+                    <span id="dice-face-2">?</span>
+                </div>
+            </div>
+            <div class="roll-result" id="roll-result">Roll the dice!</div>
+
+
+            <button class="btn btn-roll" id="roll-button">🎲 Roll Dice</button>
+            <button class="btn btn-new" id="new-game-button">🔄 New Game</button>
+        </div>
+
+        <div class="winner-message" id="winner-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

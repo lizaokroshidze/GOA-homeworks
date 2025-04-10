@@ -1,0 +1,165 @@
+/* General Styles - (Keep previous styles) */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.game-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #4a47a3;
+    margin-bottom: 10px;
+}
+
+.goal span {
+    font-weight: bold;
+    color: #ff4757; /* Highlight color for the goal */
+}
+
+/* Player Sections - (Keep previous styles) */
+.players {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.player {
+    flex-basis: 45%; /* Each player takes roughly half the space */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.player h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #555;
+}
+
+.player-score {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #4a47a3;
+}
+
+/* Active Player Highlight - (Keep previous styles) */
+.player.active {
+    background-color: #e0e0ff;
+    transform: scale(1.03);
+    border-color: #4a47a3;
+}
+.player.active h2 {
+    color: #4a47a3;
+}
+
+/* Controls Section - (Keep previous styles) */
+.controls {
+    margin-top: 30px;
+}
+
+.turn-indicator {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #555;
+    min-height: 1.5em; /* Prevent layout shift */
+}
+
+/* Dice Area - UPDATED */
+.dice-area {
+    display: flex; /* Arrange dice side-by-side */
+    justify-content: center; /* Center the dice horizontally */
+    align-items: center;
+    gap: 20px; /* Add space between the dice */
+    margin-bottom: 15px; /* Adjusted margin */
+    min-height: 80px; /* Prevent layout shift when dice appear */
+}
+
+.dice {
+    width: 70px; /* Slightly smaller dice */
+    height: 70px;
+    background-color: #ff4757;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em; /* Adjusted font size */
+    font-weight: bold;
+    transition: transform 0.5s linear; /* Keep transition */
+}
+
+/* Dice Rolling Animation - (Keep previous styles) */
+.dice.rolling {
+    animation: rotateDice 0.5s linear infinite;
+}
+
+@keyframes rotateDice {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Dice Face Span - (Keep previous styles) */
+#dice-face-1, #dice-face-2 {
+    display: inline-block;
+}
+
+.roll-result {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    min-height: 1.2em; /* Prevent layout shift */
+}
+
+
+/* Buttons - (Keep previous styles) */
+.btn {
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5px 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0px); }
+.btn-roll { background-color: #2ecc71; color: white; }
+.btn-roll:hover { background-color: #27ae60; }
+.btn-new { background-color: #f39c12; color: white; }
+.btn-new:hover { background-color: #e67e22; }
+
+/* Winner Message - (Keep previous styles) */
+.winner-message {
+    margin-top: 25px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e74c3c;
+    min-height: 1.5em;
+}
+.winner-message.show { display: block; }
+
+/* Disabled button state - (Keep previous styles) */
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+}
