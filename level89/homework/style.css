@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-
-
-/* Reset and Body (Keep As Is) */
 * {
   margin: 0;
   padding: 0;
@@ -11,105 +8,102 @@
 }
 
 body {
-  margin: 0;
   font-family: "Public Sans", sans-serif;
   min-height: 100vh;
-  color: #333; /* Added default body color */
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* --- Header Styling Enhancements --- */
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo-o svg {
+  width: 1em;
+  height: 1.3em;
+  color: #205569;
+  vertical-align: middle;
+}
+
 header {
-  /* padding: 2px; */ /* REMOVED old minimal padding */
-  padding: 2rem; /* ADDED more vertical padding for height */
-  background-color: #fff; /* ADDED white background */
-  border-bottom: 1px solid #e0e0e0; /* ADDED subtle border for separation */
-  position: sticky; /* ADDED Make header stick to top on scroll */
-  top: 0;           /* ADDED Required for sticky positioning */
-  z-index: 100;     /* ADDED Ensure header stays above other content */
-  width: 100%;      /* ADDED Ensure header spans full width when sticky */
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* Keeps side padding */
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo { /* Added for potential vertical alignment tweaks if needed */
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-  width: 120px; /* Keep existing size, or adjust if needed */
-  height: auto; /* Ensure aspect ratio is maintained */
-  display: block; /* Good practice for images */
-}
-
-/* --- Navigation Styling Enhancements --- */
 nav ul {
   list-style: none;
   display: flex;
-  align-items: center; /* Ensure vertical alignment with logo/cart */
-  gap: 1.8rem; /* Slightly increased gap */
+  align-items: center;
+  gap: 1.8rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #555; /* Slightly softer color */
+  color: #333;
   font-weight: 500;
-  /* Enhanced transition for smoother effect on all properties */
-  transition: color 0.3s ease, font-weight 0.3s ease, text-decoration-color 0.3s ease;
-  padding-bottom: 4px; /* Add space for potential underline */
-  text-decoration: underline; /* Prepare for underline effect */
-  text-decoration-color: transparent; /* Hide underline initially */
-  text-underline-offset: 6px; /* Space underline from text */
+  transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 nav ul li a:hover {
-  font-weight: 600; /* Slightly less harsh than 700 */
-  color: #0056b3; /* Example: A nice blue for hover */
-  text-decoration-color: #0056b3; /* Show underline in hover color */
+  font-weight: 700;
+  text-decoration: underline;
 }
 
-/* --- Cart Link Styling --- */
-/* You'll need to add an icon inside the <a> tag in your HTML */
-/* e.g., <a href="#" class="cart-link"><img src="images/cart-icon.svg" alt="Cart"></a> */
 .cart-link {
-  display: flex; /* To help center the icon if needed */
+  display: flex;
   align-items: center;
-  padding: 0.5rem; /* Add some clickable area */
-  border-radius: 50%; /* Make it round if desired */
+  padding: 0.5rem;
+  border-radius: 50%;
   transition: background-color 0.3s ease;
-  margin-left: 1rem; /* Add space between nav and cart */
+  margin-left: 1rem;
 }
 
-.cart-link img { /* Style the image/icon inside the link */
-  width: 24px;  /* Adjust size as needed */
-  height: 24px; /* Adjust size as needed */
+.cart-link img {
+  width: 24px;
+  height: 24px;
   display: block;
 }
 
 .cart-link:hover {
-  background-color: #f0f0f0; /* Subtle background on hover */
+  background-color: #f0f0f0;
 }
 
+/* HERO SECTION */
 
-/* --- Hero Section (Keep As Is) --- */
 .hero {
   position: relative;
   width: 100%;
-  height: auto;
+  min-height: 90vh;
   overflow: hidden;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  display: block;
+  background-image: url("images/your-photo.jpg"); /* შეცვალე შენს სურათზე */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-texts {
@@ -118,12 +112,11 @@ nav ul li a:hover {
   left: 8%;
   transform: translateY(-50%);
   font-family: "Open Sans", sans-serif;
-  font-size: 55px;
+  font-size: 4rem;
   font-weight: 300;
   line-height: 1.4;
-  color: #333;
-  max-width: 50%;
-  max-height: 50%;
+  color: #000000;
+  max-width: 40%;
   padding-right: 1rem;
 }
 
@@ -134,4 +127,19 @@ nav ul li a:hover {
   letter-spacing: 2px;
   display: block;
 }
+
+/* SECTION 1 */
+
+.sec-1 {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.sec-1 h2 {
+  font-size: 2.5rem;
+  color: #205569;
+  margin-bottom: 1rem;
+}
+
 
