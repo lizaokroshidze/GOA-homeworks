@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+
+
+/* Reset and Body (Keep As Is) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  min-height: 100vh;
+  color: #333; /* Added default body color */
+}
+
+/* --- Header Styling Enhancements --- */
+header {
+  /* padding: 2px; */ /* REMOVED old minimal padding */
+  padding: 2rem; /* ADDED more vertical padding for height */
+  background-color: #fff; /* ADDED white background */
+  border-bottom: 1px solid #e0e0e0; /* ADDED subtle border for separation */
+  position: sticky; /* ADDED Make header stick to top on scroll */
+  top: 0;           /* ADDED Required for sticky positioning */
+  z-index: 100;     /* ADDED Ensure header stays above other content */
+  width: 100%;      /* ADDED Ensure header spans full width when sticky */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Keeps side padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { /* Added for potential vertical alignment tweaks if needed */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+  width: 120px; /* Keep existing size, or adjust if needed */
+  height: auto; /* Ensure aspect ratio is maintained */
+  display: block; /* Good practice for images */
+}
+
+/* --- Navigation Styling Enhancements --- */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Ensure vertical alignment with logo/cart */
+  gap: 1.8rem; /* Slightly increased gap */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555; /* Slightly softer color */
+  font-weight: 500;
+  /* Enhanced transition for smoother effect on all properties */
+  transition: color 0.3s ease, font-weight 0.3s ease, text-decoration-color 0.3s ease;
+  padding-bottom: 4px; /* Add space for potential underline */
+  text-decoration: underline; /* Prepare for underline effect */
+  text-decoration-color: transparent; /* Hide underline initially */
+  text-underline-offset: 6px; /* Space underline from text */
+}
+
+nav ul li a:hover {
+  font-weight: 600; /* Slightly less harsh than 700 */
+  color: #0056b3; /* Example: A nice blue for hover */
+  text-decoration-color: #0056b3; /* Show underline in hover color */
+}
+
+/* --- Cart Link Styling --- */
+/* You'll need to add an icon inside the <a> tag in your HTML */
+/* e.g., <a href="#" class="cart-link"><img src="images/cart-icon.svg" alt="Cart"></a> */
+.cart-link {
+  display: flex; /* To help center the icon if needed */
+  align-items: center;
+  padding: 0.5rem; /* Add some clickable area */
+  border-radius: 50%; /* Make it round if desired */
+  transition: background-color 0.3s ease;
+  margin-left: 1rem; /* Add space between nav and cart */
+}
+
+.cart-link img { /* Style the image/icon inside the link */
+  width: 24px;  /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  display: block;
+}
+
+.cart-link:hover {
+  background-color: #f0f0f0; /* Subtle background on hover */
+}
+
+
+/* --- Hero Section (Keep As Is) --- */
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-texts {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #333;
+  max-width: 50%;
+  max-height: 50%;
+  padding-right: 1rem;
+}
+
+.main-texts span {
+  font-weight: 700;
+  color: #205569;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+}
+

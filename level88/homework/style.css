@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Orbitron:wght@400..900&family=Wallpoet&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(images/pexels-grizzlybear-965879\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Codystar", sans-serif;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: -60px; /* ← აი ეს აგწევს header-ს */
+}
+
+header h1,
+header h2 {
+  position: relative;
+  z-index: 1;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 550px;
+  min-height: 450px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.scores-section {
+  text-align: center;
+}
+
+.scores-title {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-family: "Rubik Mono One", monospace;
+  color: red;
+}
+
+#scores {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  font-size: 2rem;
+  font-family: "Rubik Mono One", monospace;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 30px 0;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Rubik Mono One", monospace;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 4px solid #222;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.dice:hover {
+  transform: scale(1.05);
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background: #222;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.result-message {
+  font-size: 2rem;
+  color: #00ffcc;
+  margin: 20px 0;
+  font-family: "Rubik Mono One", monospace;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+.dot-a { grid-area: 1 / 1; }
+.dot-b { grid-area: 2 / 1; }
+.dot-c { grid-area: 3 / 1; }
+.dot-d { grid-area: 1 / 2; }
+.dot-e { grid-area: 2 / 2; }
+.dot-f { grid-area: 3 / 2; }
+.dot-g { grid-area: 1 / 3; }
+
+.dice[data-face="6"] .dot-a { opacity: 1; }
+.dice[data-face="6"] .dot-b { opacity: 1; }
+.dice[data-face="6"] .dot-c { opacity: 1; }
+.dice[data-face="6"] .dot-d { opacity: 1; }
+.dice[data-face="6"] .dot-e { opacity: 1; }
+.dice[data-face="6"] .dot-f { opacity: 1; }

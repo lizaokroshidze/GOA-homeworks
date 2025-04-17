@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Dice Roll Game</title>
+</head>
+<body>
+  <header>
+    <h1 style="color: red;">Welcome</h1>
+    <h2 style="color: white;">To the dice roll game</h2>
+  </header>
+
+  <div class="game">
+    <div class="scores-section">
+      <p class="scores-title">SCORES</p>
+      <div id="scores">
+        <p class="player-score" id="player1Score">0</p>
+        <p class="player-score" id="player2Score">0</p>
+      </div>
+    </div>
+
+    <div class="dice-container">
+      <div class="player-info">
+        <p class="player-name">Player <span style="color: red;">1</span></p>
+        <div class="dice" id="player1Dice" data-face="1">
+          <div class="dot dot-a"></div>
+          <div class="dot dot-b"></div>
+          <div class="dot dot-c"></div>
+          <div class="dot dot-d"></div>
+          <div class="dot dot-e"></div>
+          <div class="dot dot-f"></div>
+          <div class="dot dot-g"></div>
+        </div>
+      </div>
+
+      <div class="player-info">
+        <p class="player-name">Player <span style="color: red;">2</span></p>
+        <div class="dice" id="player2Dice" data-face="1">
+          <div class="dot dot-a"></div>
+          <div class="dot dot-b"></div>
+          <div class="dot dot-c"></div>
+          <div class="dot dot-d"></div>
+          <div class="dot dot-e"></div>
+          <div class="dot dot-f"></div>
+          <div class="dot dot-g"></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+        <p id="resultMessage" class="result-message"></p>
+    </div>
+
+    <div class="controls">
+      <button id="rollButton" class="btn">Roll Dice</button>
+      <button id="playAgainButton" class="btn" style="display: none;">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
