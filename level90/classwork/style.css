@@ -1,0 +1,15 @@
+.logo {
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    
+    gap: 4px;
+  }
+  
+  .logo-o svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+  }
