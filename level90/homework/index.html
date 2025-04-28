@@ -36,16 +36,11 @@
         </ul>
       </nav>
 
-      <div class="shop-srch">
-
+      <div class="icon-cart">
         <a href="#" class="cart-link">
-          <img src="images/parcel.png" alt="">
+          <img src="images/shopping-cart.png"">
         </a>
-  
-        <a href="#" class="cart-link">
-          <img src="images/search.png">
-        </a>
-
+        <span>0</span>
       </div>
 
     </div>
@@ -155,7 +150,22 @@
     </div>
   </section>
 
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cartSidebar">
+
+    <h3>Cart</h3>
+    <div id="cart-items"></div>
+    <button id="closeCart" style="background-color:#e74c3c;color:#fff;border:none;padding:5px 10px;border-radius:4px;cursor:pointer;margin-bottom:10px;">
+      Close
+    </button>
+    <div id="cart-items"></div>
+    <div id="cart-summary" style="margin-top:15px;border-top:1px solid #ddd;padding-top:10px;">
+      <p>Total Items: <span id="total-items">0</span></p>
+      <p>Total Price: $<span id="total-price">0.00</span></p>
+    </div>
+  </div>
+
   <div class="section-divider"></div>
-  
+  <script src="script.js"></script>
 </body>
 </html>

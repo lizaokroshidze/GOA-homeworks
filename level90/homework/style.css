@@ -70,18 +70,6 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-.shop-srch {
-  display: flex;
-  align-items: center;
-}
-
-.cart-link {
-  padding: 0.5rem;
-  margin-left: 1rem;
-  border-radius: 50%;
-  transition: 0.3s ease;
-}
-
 .cart-link img {
   width: 24px;
   height: 24px;
@@ -89,13 +77,12 @@ nav ul li a:hover {
 
 .cart-link:hover {
   background-color: #f0f0f0;
-  transform: scale(1.1);
+
 }
 
-/* HERO */
 .hero {
   width: 100%;
-  min-height: 90vh;
+  min-height: 70vh;
   background-image: url("images/your-photo.jpg");
   background-size: cover;
   background-position: center;
@@ -122,9 +109,9 @@ nav ul li a:hover {
   letter-spacing: 2px;
 }
 
-/* SECTION 1 */
+
 .sec-1 {
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
 }
 
@@ -133,17 +120,15 @@ nav ul li a:hover {
   color: #205569;
 }
 
-/* --- Section Divider (Gradient) --- */
 .section-divider {
-  height: 3px; /* Height needed for background */
-  background: linear-gradient(to right, transparent, #205569, transparent); /* Gray gradient */
+  height: 3px; 
+  background: linear-gradient(to right, transparent, #205569, transparent);
   border: none;
-  margin: 40px 0; /* Adjust spacing as needed */
+  margin: 40px 0; 
   padding: 0;
   width: 100%;
 }
 
-/* PRODUCT GRID */
 .cameras-product {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -151,7 +136,6 @@ nav ul li a:hover {
   padding: 3rem;
 }
 
-/* PRODUCT CARD */
 .product-card {
   background: #fff;
   border-radius: 16px;
@@ -249,7 +233,44 @@ nav ul li a:hover {
 }
 
 
-/* RESPONSIVE */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  border-left: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.cart-sidebar.visible {
+  right: 0;
+}
+
+.cart-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.cart-item p {
+  margin: 4px 0;
+}
+
+.cart-item button {
+  margin-top: 5px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 @media (max-width: 600px) {
   .main-texts {
     font-size: 2rem;
