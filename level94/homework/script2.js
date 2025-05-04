@@ -9,11 +9,11 @@ const words = [
     "functionality",
     "fun",
     "magic"
-  ];
-  
-  function filterLongWords(arr) {
+];
+
+function filterLongWords(arr) {
     return arr.filter(word => word.length > 5);
-  }
-  
-  console.log("სრული სიტყვები:", words);
-  console.log( "> 5 სიმბოლო:", filterLongWords(words));
+}
+
+console.log("სრული სიტყვები:", words);
+console.log("> 5 სიმბოლო:", filterLongWords(words));
