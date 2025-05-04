@@ -1,69 +1,94 @@
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-    background-image: url(new-year-aesthetic-9aoumi4fxxtl3ubi.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
+  background-image: url(new-year-aesthetic-9aoumi4fxxtl3ubi.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
 }
 
 #container {
-    background-color: rgba(0, 0, 0, 0.515);
-    width: 100%; /* ან კონკრეტული ზომა */
-    min-height: 100vh; /* მაგალითად მთელი ეკრანის სიმაღლე */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(0, 0, 0, 0.515);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #content {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
 #title {
-    font-size: 60px;
-    /* margin-bottom: 20px;
-     */
-     padding: 30px;
+  font-size: 60px;
+  padding: 30px;
 }
 
 #Countdown {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    height: 50%;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 50%;
+  align-items: center;
+  gap: 40px;
 }
 
 .time {
-    width: 20vh ;
-    height: 20vh;
-    padding: 2vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.474);
+  width: 20vh;
+  height: 20vh;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.474);
 }
 
 .time h3 {
-    font-size: 55px;
+  font-size: 55px;
 }
 
-.time p  {
-    font-size: 20px;
+.time p {
+  font-size: 20px;
+}
+
+#newYearMessage {
+  display: none;
+  font-size: 50px;
+  color: gold;
+  margin-top: 30px;
+  animation: fadeIn 2s ease forwards;
+}
+
+#confetti-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
