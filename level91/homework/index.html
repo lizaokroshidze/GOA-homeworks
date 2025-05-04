@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InFocus</title>
+  <link rel="icon" href="images/Inf cus.png" type="images">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="#" class="logo-link">
+        <span class="logo">
+          inf
+          <span class="logo-o">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2" fill="none" />
+              <circle cx="32" cy="32" r="20" fill="currentColor" opacity="0.1" />
+              <circle cx="32" cy="32" r="10" fill="currentColor" opacity="0.2" />
+              <circle cx="26" cy="26" r="4" fill="white" opacity="0.3" />
+            </svg>
+          </span>
+          cus
+        </span>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cameras</a></li>
+          <li><a href="#">Lens</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="icon-cart">
+        <a href="#" class="cart-link">
+          <img src="images/shopping-cart.png"">
+        </a>
+        <span>0</span>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="main-texts">
+        <p>Your story.</p>
+        <p><span>Our lens.</span></p>
+        <p>Unforgettable shots.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="section-divider"></div>
+
+  <section class="sec-1">
+    <div>
+      <H2>Cameras</H2>
+    </div>
+  </section>
+
+
+  <section class="cameras-product">
+    <div class="product-card">
+      <img src="images/canong7x.jpg" alt="canong7x" class="product-image" />
+      <div class="product-info">
+        <h2 class="product-title">Canon PowerShot G7X Mark III Digital Camera.</h2>
+        <p class="product-description">4.2X Optical Zoom Lens (Black)</p>
+        <div class="product-price-rating">
+          <span class="product-price">$1,498.99</span>
+          <span class="product-rating">★★★★★</span>
+        </div>
+        
+        <!-- ღილაკები ერთად -->
+        <div class="product-buttons">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="buy-now-btn">Buy</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="product-card">
+      <img src="images/sonyzv1.jpg" alt="sonyZV1" class="product-image" />
+      <div class="product-info">
+        <h2 class="product-title">Sony ZV-1 <br>Vlogging Camera. </h2>
+        <p class="product-description">20.1MP, 4K Video, Flip Screen</p>
+        <div class="product-price-rating">
+          <span class="product-price">$748.00</span>
+          <span class="product-rating">★★★★☆</span>
+        </div>
+        <div class="product-buttons">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="buy-now-btn">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/canoneosm50.webp" alt="Canon M50" class="product-image" />
+      <div class="product-info">
+        <h2 class="product-title">Canon EOS M50 ,<br>Mark II.</h2>
+        <p class="product-description">24.1MP, 4K Video, Dual Pixel AF</p>
+        <div class="product-price-rating">
+          <span class="product-price">$699.00</span>
+          <span class="product-rating">★★★★☆</span>
+        </div>
+        <div class="product-buttons">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="buy-now-btn">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/nikonz30.jpg" alt="Nikon Z30" class="product-image" />
+      <div class="product-info">
+        <h2 class="product-title">Nikon Z30 Mirrorless Camera.</h2>
+        <p class="product-description">20.9MP, 4K Video, Vlogger Kit</p>
+        <div class="product-price-rating">
+          <span class="product-price">$716.95</span>
+          <span class="product-rating">★★★★☆</span>
+        </div>
+        <div class="product-buttons">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="buy-now-btn">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/fujix100.jpg" alt="Fujifilm X100V" class="product-image" />
+      <div class="product-info">
+        <h2 class="product-title">Fujifilm X100V Compact Camera.</h2>
+        <p class="product-description">26.1MP, 4K Video, Fixed Lens, Retro Style</p>
+        <div class="product-price-rating">
+          <span class="product-price">$1,399.00</span>
+          <span class="product-rating">★★★★★</span>
+        </div>
+        <div class="product-buttons">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="buy-now-btn">Buy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cartSidebar">
+
+    <h3>Cart</h3>
+    <div id="cart-items"></div>
+    <button id="closeCart" style="background-color:#e74c3c;color:#fff;border:none;padding:5px 10px;border-radius:4px;cursor:pointer;margin-bottom:10px;">
+      Close
+    </button>
+    <div id="cart-items"></div>
+    <div id="cart-summary" style="margin-top:15px;border-top:1px solid #ddd;padding-top:10px;">
+      <p>Total Items: <span id="total-items">0</span></p>
+      <p>Total Price: $<span id="total-price">0.00</span></p>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+  <script src="script.js"></script>
+</body>
+</html>
