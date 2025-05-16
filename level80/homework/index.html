@@ -1,9 +1,76 @@
-<!--1) კომენტარის სახით ახსენით, თუ როგორ მუშაობს EventListener-ები და მოიყვანეთ მისი გამოყენების ერთ-ერთი მაგალითი;
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>პროექტი</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">მთავარი</a></li>
+        <li><a href="#projects">პროექტები</a></li>
+        <li><a href="#contact">კონტაქტი</a></li>
+      </ul>
+    </nav>
+  </header>
 
-2) საიტზე დაამატეთ 3 ფოტო, რომლებსაც გაცენტრავთ და დიზაინის მხრივ დახვეწავთ. საიტზე მოცემული სამი ფოტოდან პირველი ორის შემთხვევაში მათზე მაუსის გადატარებისას შეიცვალოს ეს ფოტოები და კურსორის გაწევის შედეგად ისევ დაუბრუნდეს თავდაპირველ ფოტოს, ხოლო მესამე ფოტო დაჭერის შედეგად ჩაანაცვლეთ სხვა ფოტოთი, ამ შემთხვევაშიც უნდა უბრუნდებოდეს საწყის ფოტოს კურსორის გაწევის შემდეგ;
+  <section id="home" class="hero">
+    <img src="https://i.pinimg.com/736x/c5/31/d0/c531d01db3e37cb9bc9b09f63296dd93.jpg" alt="me" />
+    <h1>Hello, my name is Liza!</h1>
+    <p>Frontend Developer</p>
+  </section>
 
-3) საიტზე დაამატეთ ერთი ფოტო. მასზე დაჭერის შედეგად უნდა იცვლებოდეს იგი მეორე ფოტოთი, ხოლო მეორე ფოტოზე მაუსის გადატარების შემთხვევაში ისიც უნდა ჩანაცვლდეს ამჯერად კიდევ განსხვავებული მესამე ფოტოთი. მესამე ფოტოზე კიდევ ერთხელ დაჭერა უნდა იწევევდეს თავდაპირველი ფოტოს დაბრუნებას;
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="slider">
+      <button id="prev">&#10094;</button>
+      <div class="slides">
+        <img src="https://i.pinimg.com/736x/79/d7/1a/79d71af59b218fc7fb89055ebca1dc0b.jpg" alt="Project 1" />
+        <img src="https://i.pinimg.com/736x/61/24/12/612412735abc9e0e206037576be69285.jpg" alt="Project 2" />
+        <img src="https://i.pinimg.com/736x/20/14/57/20145778099d03635e72b53424785b01.jpg" alt="Project 3" />
+      </div>
+      <button id="next">&#10095;</button>
+    </div>
+  </section>
 
-4) შექმენით სარეგისტრაციო ვებ-საიტი, რომელიც დიზაინის მხრივ მაქსიმალურად დახვეწავთ. მომხმარებელს Input ველებში შემოატანინეთ Email, Password და კიდევ ერთხელ გაამეორებინეთ Password, აუცილებლად დაამატეთ Submit ღილაკიც. გაიხსენეთ ფუნქცია, რომელიც გაკვეთილზე გავაკეთეთ და თქვენით დაამატეთ მსგავსი ფუნქციონალი თქვენს სარეგისტრაციო საიტზე. იმ შემთხვევაში თუ შეყვანილი პაროლი და გამეორებული პაროლი არ ემთხვევა ერთმანეთს alert box-ში გამოიტანეთ "Passwords do not match eachother. Try again.", თუ ორივე პაროლის შესაყვანი ველი ცარიელი იქნება გამოიტანეთ "Input fields cannot be empty.", ხოლო იმ შემთხვევაში თუ  შეყვანილი პაროლი და გამეორებული პაროლი ემთხვევა ერთმანეთს alert box-ში "Your login was successful" გამოიტანეთ;
+  <section id="interactive-photos">
+    <h2>Interactive Photos</h2>
+    <div class="photo-container">
+      <img src="https://i.pinimg.com/736x/80/44/72/804472a8dbdc553623b7e3d3c6033b0f.jpg" id="photo1" />
+      <img src="https://i.pinimg.com/originals/31/47/12/314712e492f64231b00e4f6a742f087b.gif" id="photo2" />
+      <img src="https://i.pinimg.com/originals/33/00/37/330037e458e290dfdcba28c43c7ff556.gif" id="photo3" />
+    </div>
+  </section>
 
-5) Sololearn-ში გაიარეთ Form validation და Module 4 Quiz. (+ გადაიმეორეთ EventListener-ები).-->
+  <section id="special-photo">
+    <h2>Photo Cycle</h2>
+    <img src="https://i.pinimg.com/736x/82/13/d1/8213d17c03a282c672fc6a5202471c11.jpg" id="cyclePhoto" />
+  </section>
+
+  <section id="registration">
+    <h2>Registration</h2>
+    <form id="registerForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="password" id="repeatPassword" placeholder="Repeat Password" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="სახელი" required />
+      <input type="email" id="email" placeholder="იმეილი" required />
+      <textarea id="message" placeholder="შეტყობინება" required></textarea>
+      <button type="submit">გაგზავნა</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #111;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Colors */
+  .purple {
+    background-color: #7c54e0;
+    color: white;
+  }
+  .mustard {
+    background-color: #f0c050;
+    color: #222;
+  }
+  .lavender {
+    background-color: #c8b8f9;
+    color: #222;
+  }
+  .white {
+    background-color: white;
+    color: #222;
+  }
+  
+  /* Typography */
+  h2, h3, p {
+    margin: 0 0 0.5rem 0;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+  .highlight-yellow {
+    color: #f0c050;
+    font-weight: 700;
+  }
+  .italic-purple {
+    font-style: italic;
+    color: #7c54e0;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  .small-text {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+  .green-text {
+    color: #38c172;
+    font-weight: 600;
+  }
+  .large-number {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .big-text {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  /* Grid items sizing */
+  .item1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  .item2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  .item3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  .item4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .item5 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .item6 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  .item7 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #f0c050;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    background-color: #f0c050;
+    color: #222;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+  
+  /* Inner blocks & avatars */
+  .avatars img {
+    border-radius: 50%;
+    margin-right: 0.3rem;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .post-time {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .days {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 0.3rem;
+  }
+  .active-day {
+    background: #fddde6;
+    padding: 2px 8px;
+    border-radius: 20px;
+  }
+  
+  .bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    margin-bottom: 0.5rem;
+  }
+  .bar {
+    background: #7c54e0;
+    border-radius: 10px;
+    width: 15%;
+  }
+  .bar.short { height: 20px; }
+  .bar.medium { height: 40px; }
+  .bar.tall { height: 65px; }
+  .bar.tallest { height: 90px; }
+  
+  .schedule {
+    background: white;
+    border-radius: 12px;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .schedule-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+  }
+  .checkmarks {
+    display: flex;
+    gap: 0.3rem;
+  }
+  .checkmark {
+    background: #7c54e0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .follower-growth {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .centered-text {
+    text-align: center;
+  }
+  
+  /* Responsive */
+  @media (max-width: 700px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    .item1, .item2, .item3, .item4, .item5, .item6, .item7 {
+      grid-column: auto !important;
+      grid-row: auto !important;
+    }
+  }

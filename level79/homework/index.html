@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ლიზას პორტფოლიო</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <img
+        src="https://i.pinimg.com/736x/c5/31/d0/c531d01db3e37cb9bc9b09f63296dd93.jpg"
+        alt="me"
+      />
+      <h1>Hello, My name is Liza!</h1>
+      <p>Frontend Developer</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="slider">
+          <button id="prev">&#10094;</button>
+          <div class="slides">
+            <img src="https://i.pinimg.com/736x/a9/88/19/a98819e29e1006cb8b9db15bf6fed997.jpg" alt="პროექტი 1" />
+            <img src="https://i.pinimg.com/736x/5d/3d/7b/5d3d7b02816df127a0d27e81d5c09d1d.jpg" alt="პროექტი 2" />
+            <img src="https://i.pinimg.com/736x/00/8a/42/008a4248944e3c25e636dd8861fd76dd.jpg" alt="პროექტი 3" />
+          </div>
+          <button id="next">&#10095;</button>
+        </div>
+      </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="სახელი" required />
+        <input type="email" id="email" placeholder="იმეილი" required />
+        <textarea id="message" placeholder="შეტყობინება" required></textarea>
+        <button type="submit">გაგზავნა</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

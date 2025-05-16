@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Bento grid</title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bento Grid Clone</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  Social Media 10x Faster with AI
-  Over 4,000 5-star reviews
-
-  Manage multiple accounts and platforms.
-
-  Maintain a consistent posting schedule.
-
-  Schedule to social media.
-  Optimize post timings to publish content at the perfect time for your audience.
-  
-  Grow followers with non-stop content.
-
-  >56% faster audience growth
-  
-  Create and schedule content quicker.
-
-  Write your content using AI.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Liza Okroshidze</a>.
+<div class="grid-container">
+  <div class="item2 mustard">
+    <h2>Create and schedule content <span class="italic-purple">quicker.</span></h2>
+    <a href="#" class="btn">Create Post ✦</a>
   </div>
+
+  <div class="item1 purple">
+    <h2>Social Media <span class="highlight-yellow">10x</span> <em>Faster</em> with AI</h2>
+    <p>★★★★★</p>
+    <p>Over 4,000 5-star reviews</p>
+  </div>
+
+  <div class="item3 lavender">
+    <h3>Schedule to social media.</h3>
+    <div class="post-time">
+      <p class="bold">Best Time to Post</p>
+      <div class="days">
+        <span class="active-day">Mon</span>
+        <span>Tue</span>
+        <span>Wed</span>
+        <span>Thu</span>
+      </div>
+      <div class="bars">
+        <div class="bar short"></div>
+        <div class="bar medium"></div>
+        <div class="bar tall"></div>
+        <div class="bar tallest"></div>
+        <div class="bar tall"></div>
+      </div>
+      <p class="small-text">
+        Optimize post timings to publish content at the perfect time for your audience.
+      </p>
+    </div>
+  </div>
+
+  <div class="item4 white">
+    <h3>Manage multiple accounts and platforms.</h3>
+    <div class="avatars">
+      <img src="https://i.pravatar.cc/40?img=1" alt="Avatar" />
+      <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+      <img src="https://i.pravatar.cc/40?img=3" alt="Avatar" />
+    </div>
+  </div>
+
+  <div class="item7 mustard">
+    <h3>Maintain a consistent posting schedule.</h3>
+    <div class="schedule">
+      <div class="schedule-header">
+        <span>August 2024</span>
+        <span>Week 1</span>
+      </div>
+      <div class="checkmarks">
+        <div class="checkmark"></div>
+        <div class="checkmark"></div>
+        <div class="checkmark"></div>
+        <div class="checkmark"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item5 white centered-text">
+    <p class="big-text">&gt;56%</p>
+    <p>faster audience growth</p>
+    <div class="avatars">
+      <img src="https://i.pravatar.cc/40?img=4" alt="Avatar" />
+      <img src="https://i.pravatar.cc/40?img=5" alt="Avatar" />
+      <img src="https://i.pravatar.cc/40?img=6" alt="Avatar" />
+    </div>
+  </div>
+
+  <div class="item6 purple">
+    <h3>Grow followers with non-stop content.</h3>
+    <div class="follower-growth">
+      <p class="bold">Follower Growth</p>
+      <p class="large-number">20,642 <span class="green-text">+49%</span></p>
+      <div class="bars">
+        <div class="bar short"></div>
+        <div class="bar medium"></div>
+        <div class="bar tall"></div>
+        <div class="bar tallest"></div>
+        <div class="bar tall"></div>
+      </div>
+      <p class="small-text">Followers 89,532 <span class="green-text">+120%</span></p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
