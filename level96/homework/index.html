@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Registration and Login</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <section id="data-display">
-            <h1>User Data</h1>
-            <p>Fullname: <span id="displayed-fullname"></span></p>
-            <p>Email: <span id="displayed-email"></span></p>
-            <p>Password: <span id="displayed-password"></span></p>
-            <hr>
-        </section>
+      <section id="data-display">
+        <h1>User Data</h1>
+        <p>Fullname: <span id="displayed-fullname"></span></p>
+        <p>Email: <span id="displayed-email"></span></p>
+        <p>Password: <span id="displayed-password"></span></p>
+        <hr />
+      </section>
 
-        <section id="registration-form">
-            <h2>Registration</h2>
-            <form id="registerForm">
-                <div>
-                    <label for="reg-fullname">Fullname:</label>
-                    <input type="text" id="reg-fullname" required>
-                </div>
-                <div>
-                    <label for="reg-email">Email:</label>
-                    <input type="email" id="reg-email" required>
-                </div>
-                <div>
-                    <label for="reg-password">Password:</label>
-                    <input type="password" id="reg-password" required>
-                </div>
-                <button type="submit">Register</button>
-            </form>
-            <div id="registration-message" class="message"></div>
-            <hr>
-        </section>
+      <section id="registration-form">
+        <h2>Registration</h2>
+        <form id="registerForm">
+          <div>
+            <label for="reg-fullname">Fullname:</label>
+            <input type="text" id="reg-fullname" required />
+          </div>
+          <div>
+            <label for="reg-email">Email:</label>
+            <input type="email" id="reg-email" required />
+          </div>
+          <div>
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" required />
+          </div>
+          <button type="submit">Register</button>
+        </form>
+        <div id="registration-message" class="message"></div>
+        <hr />
+      </section>
 
-        <section id="login-form">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <div>
-                    <label for="login-email">Email:</label>
-                    <input type="email" id="login-email" required>
-                </div>
-                <div>
-                    <label for="login-password">Password:</label>
-                    <input type="password" id="login-password" required>
-                </div>
-                <button type="submit">Login</button>
-            </form>
-            <div id="login-message" class="message"></div>
-        </section>
+      <section id="login-form">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" required />
+          </div>
+          <div>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" required />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <div id="login-message" class="message"></div>
+      </section>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

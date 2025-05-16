@@ -4,7 +4,7 @@ const displayedFullname = document.getElementById('displayed-fullname');
 const displayedEmail = document.getElementById('displayed-email');
 const displayedPassword = document.getElementById('displayed-password');
 
-registerFormDisplay.addEventListener('submit', function(event) {
+registerFormDisplay.addEventListener('submit', function (event) {
     event.preventDefault();
     const fullname = document.getElementById('reg-fullname').value;
     const email = document.getElementById('reg-email').value;
@@ -27,7 +27,7 @@ function User(fullname, email, password) {
 const registerForm = document.getElementById('registerForm');
 const registrationMessage = document.getElementById('registration-message');
 
-registerForm.addEventListener('submit', function(event) {
+registerForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const fullname = document.getElementById('reg-fullname').value;
     const email = document.getElementById('reg-email').value;
@@ -50,7 +50,7 @@ registerForm.addEventListener('submit', function(event) {
 const loginForm = document.getElementById('loginForm');
 const loginMessage = document.getElementById('login-message');
 
-loginForm.addEventListener('submit', function(event) {
+loginForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const email = document.getElementById('login-email').value;
     const password = document.getElementById('login-password').value;
