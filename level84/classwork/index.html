@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Click Element Example</title>
+  <style>
+    .item {
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    .color-box {
+      width: 200px;
+      height: 100px;
+      margin: 10px;
+      border: 1px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
-    <script src="script.js"></script>
+  <h2 class="item">Element 1</h2>
+  <p class="item">Element 2</p>
+  <div class="item">Element 3</div>
+  <button class="item">Element 4</button>
+
+
+  <div id="red" class="color-box">
+    <p>Click to see color</p>
+  </div>
+
+  <div id="green" class="color-box">
+    <p>Click to see color</p>
+  </div>
+
+  <div id="blue" class="color-box">
+    <p>Click to see color</p>
+  </div>
+
+  <div id="yellow" class="color-box">
+    <p>Click to see color</p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
