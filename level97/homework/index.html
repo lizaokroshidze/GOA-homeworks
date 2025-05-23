@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Amazon</title>
   </head>
   <body>
@@ -11,13 +15,22 @@
       <div class="amazon-logo">
         <img src="imgs/Amazon-logo.png" alt="Amazon logo" />
       </div>
+
+      <div>
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      </div>
     </header>
 
     <main>
       <section class="container">
         <div class="watch-div">
-          <img src="imgs/pink.png" alt="Product image" id="clock"/>
+          <img src="imgs/pink.png" alt="Product image" id="clock" />
           <p id="time-display">00:00:00</p>
+
+          <div class="rate">
+            <img src="imgs/heart.png" alt="heartbeat" id="heartbeat" />
+            <p class="heartrate">78 BPM</p>
+          </div>
         </div>
 
         <div class="info">
@@ -51,6 +64,24 @@
           <div class="buy">
             <button id="buy">Buy Now</button>
           </div>
+        </div>
+      </section>
+
+      <section class="logbg">
+        <div class="login">
+          <h2>Log In</h2>
+          <form action="">
+            <div>
+              <input type="email" placeholder="Enter Your Email" />
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <input type="password" placeholder="Enter Password" />
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <button>Log In</button>
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+          </form>
         </div>
       </section>
     </main>

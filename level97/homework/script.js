@@ -4,7 +4,13 @@ let same = document.querySelectorAll(".same");
 
 let adress = ["imgs/black.png","imgs/red.png","imgs/purple.png","imgs/pink.png"];
 
-let clock = document.getElementById("clock")
+let clock = document.getElementById("clock");
+
+let heartBeat = document.querySelector("#rate");
+
+let timeBut = document.querySelector("#show-time");
+
+let rateDiv =document.querySelector(".rate");
 
 for( let i = 0; i < same.length; i++) {
     same[i].addEventListener("click", () => {
@@ -21,3 +27,14 @@ setInterval(() => {
 
   time.textContent = `${hour}:${minute}:${seconds}`;
 }, 1000);
+
+
+heartBeat.addEventListener("click",() => {
+  time.style.display = "none";
+  rateDiv.style.display = "flex";
+});
+
+timeBut.addEventListener("click", () => {
+  rateDiv.style.display = "none";
+  time.style.display = "flex";
+});
