@@ -31,10 +31,11 @@ header img {
 
 .fa-arrow-right-to-bracket {
   position: absolute;
-  right: 30px;
+  right: 70px;
   transform: translateY(-50%);
   color: white;
   font-size: 22px;
+  cursor: pointer;
 }
 
 main {
@@ -119,7 +120,7 @@ section {
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 70px;
   gap: 30px;
 }
 
@@ -226,8 +227,8 @@ section {
   align-items: center;
 }
 
-/* Login Box */
 .login {
+  position: relative;
   background-color: #fff;
   padding: 35px 25px;
   border-radius: 12px;
@@ -244,7 +245,6 @@ section {
   color: #1c1c1c;
 }
 
-/* Form Field Group */
 .login form div {
   position: relative;
   margin-bottom: 18px;
@@ -266,7 +266,6 @@ section {
   color: #888;
 }
 
-/* Login Button */
 .login button {
   margin-top: 10px;
   padding: 12px;
@@ -284,7 +283,6 @@ section {
   background-color: #2c2c50;
 }
 
-/* Bottom Text */
 .login p {
   margin-top: 15px;
   font-size: 14px;
@@ -297,6 +295,18 @@ section {
 
 .login a:hover {
   text-decoration: underline;
+}
+
+.login i.fa-xmark {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.login i.fa-xmark:hover {
+  color: #414040;
 }
 
 @media (max-width: 1000px) {

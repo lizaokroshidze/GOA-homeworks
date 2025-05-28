@@ -17,7 +17,7 @@
       </div>
 
       <div>
-        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        <i id="openLogin" class="fa-solid fa-arrow-right-to-bracket" id="login-icon"></i>
       </div>
     </header>
 
@@ -67,25 +67,73 @@
         </div>
       </section>
 
-      <section class="logbg">
-        <div class="login">
-          <h2>Log In</h2>
-          <form action="">
+      <section class="logbg" id="login-bg" style="display: none;">
+        <!-- Login ფორმა -->
+        <div class="login" id="login">
+          <i class="fa-solid fa-xmark" id="close-login"></i>
+          <h2>Sing in</h2>
+          <form id="login-form">
             <div>
-              <input type="email" placeholder="Enter Your Email" />
+              <input type="text" placeholder="Username" required />
+              <i class="fa fa-user"></i>
+            </div>
+            <div>
+              <input type="password" placeholder="Password" required />
+              <i id="exit-login" class="fa fa-lock"></i>
+            </div>
+            <button type="submit">Sign In</button>
+            <p>Don't have an account? <a href="#" id="go-reg">Sign up</a></p>
+          </form>
+        </div>
+      </section>
+      <section class="logbg" id="registration-form" style="display: none;">
+        <!-- Register ფორმა -->
+        <div class="login hidden" id="registration">
+          <i class="fa-solid fa-xmark" id="close-login-2"></i>
+          <h2>Create Account</h2>
+          <form id="register-form">
+            <div>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                required
+              />
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div>
-              <input type="password" placeholder="Enter Password" />
+              <input
+                type="password"
+                name="password"
+                placeholder="Create Password"
+                required
+              />
               <i class="fa-solid fa-lock"></i>
             </div>
-            <button>Log In</button>
-            <p>Don't have an account? <a href="register.html">Register</a></p>
+            <div>
+              <input
+                type="password"
+                name="RepeatPassword"
+                placeholder="Repeat Your Password"
+                required
+              />
+              <i id="exit-register" class="fa-solid fa-lock"></i>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="#" id="go-log">Sign in</a></p>
           </form>
         </div>
       </section>
     </main>
-
     <script src="script.js"></script>
   </body>
 </html>
