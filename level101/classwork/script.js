@@ -26,3 +26,5 @@ console.log(JSON)
 localStorage.setItem("name",{name:'liza'})
 
 console.log(localStorage.getItem("name"))
+
+// 
