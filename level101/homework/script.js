@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const saveTaskTolocalStorage = () => {
     const tasks = Array.from(taskList.querySelectorAll("li")).map((li) => ({
       text: li.querySelector("span").textContent,
-      completed: li.querySelector(".checkbox").checked, // ✅ აქ იყო ".checkbox" არასწორად იყო "checkbox"
+      completed: li.querySelector(".checkbox").checked, 
     }));
     localStorage.setItem("tasks", JSON.stringify(tasks));
   };
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const addTask = (text, completed = false, checkCompletion = true) => {
-    event.preventDefault(); // ✅ ეს გლობალურ სკოპში იყო, მაგრამ უმჯობესია ფუნქციაში „event“ არ გამოვიყენოთ გლობალურად
+    event.preventDefault(); 
     const taskText = text || taskInput.value.trim();
     if (!taskText) {
       return;
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   addTaskButton.addEventListener("click", (event) => {
-    event.preventDefault(); // ✅ აქ დავამატე event პარამეტრი
+    event.preventDefault();
     addTask();
   });
 
