@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #0d47a1;
+}
+
+.car-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.car-list button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.car-list button:hover {
+  background-color: #1565c0;
+}
+
+.card {
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.car-details h2 {
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.car-details p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+button.info-btn, button.sound-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+button.info-btn {
+  background-color: #4caf50;
+  color: white;
+}
+button.info-btn:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05);
+}
+
+button.sound-btn {
+  background-color: #f44336;
+  color: white;
+}
+button.sound-btn:hover {
+  background-color: #c62828;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}

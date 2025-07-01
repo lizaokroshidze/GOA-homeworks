@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Car Catalog</h1>
+  </header>
+
+  <main>
+    <nav class="car-list">
+      <button onclick="showCar('bmw')">BMW</button>
+      <button onclick="showCar('mercedes')">Mercedes</button>
+      <button onclick="showCar('audi')">Audi</button>
+    </nav>
+
+    <section id="carDisplay" class="hidden">
+      <div class="card">
+        <img id="carImage" src="" alt="Car Image">
+        <div class="car-details">
+          <h2 id="carName">Car Information</h2>
+          <p id="carInfo">...</p>
+          <div class="buttons">
+            <button class="info-btn" onclick="showInfo()">ℹ️ Get Info</button>
+            <button class="sound-btn" onclick="playEngineSound()">🔊 Engine Sound</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
