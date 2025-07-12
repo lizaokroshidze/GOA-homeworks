@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Orders</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px;
+      background-color: #f7f7f7;
+    }
+
+    .box {
+      border: 2px solid #333;
+      border-radius: 15px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      min-height: 350px;
+      width: 300px;
+    }
+
+    h3 {
+      text-align: center;
+      color: #444;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 15px;
+    }
+
+    li {
+      background-color: #e1f5fe;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+    }
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 50px;
+    }
+
+    .input {
+      padding: 10px;
+      margin-bottom: 15px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px 25px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="box" id="activeOrdersBox">
+  <h3>Active order</h3>
+  <ul id="activeOrders"></ul>
+</div>
+
+<div class="center">
+  <input class="input" type="text" id="nameInput" placeholder="name">
+  <input class="input" type="text" id="foodInput" placeholder="food">
+  <button onclick="createOrder()">order</button>
+</div>
+
+<div class="box" id="completedOrdersBox">
+  <h3>Completed order</h3>
+  <ul id="completedOrders"></ul>
+</div>
+
+<script>
+// ---- OrderManager კლასი ----
+class OrderManager {
+  constructor() {
+    this.activeOrders = new Map();
+    this.completedOrders = new Set();
+  }
+
+  processOrder(orderId, customerName, callback) {
+    this.activeOrders.set(orderId, customerName);
+    console.log(`შეკვეთა მიღებულია: #${orderId}, მომხმარებელი: ${customerName}`);
+    this.printStatus();
+
+    setTimeout(() => {
+      this.activeOrders.delete(orderId);
+      this.completedOrders.add(customerName);
+      callback(orderId);
+      this.printStatus();
+    }, 3000);
+  }
+
+  printStatus() {
+    const activeOrdersList = document.getElementById('activeOrders');
+    const completedOrdersList = document.getElementById('completedOrders');
+
+    activeOrdersList.innerHTML = '';
+    completedOrdersList.innerHTML = '';
+
+    for (const [id, name] of this.activeOrders) {
+      const li = document.createElement('li');
+      li.innerHTML = `<span>${id}. ${name}</span><span>${new Date().toLocaleTimeString()}</span>`;
+      activeOrdersList.appendChild(li);
+    }
+
+    let index = 1;
+    for (const name of this.completedOrders) {
+      const li = document.createElement('li');
+      li.textContent = `${index++}. ${name}`;
+      completedOrdersList.appendChild(li);
+    }
+  }
+}
+
+// ---- Callback ფუნქცია ----
+function orderCompleted(orderId) {
+  console.log(`შეკვეთა #${orderId} დამთავრდა`);
+}
+
+// ---- ობიექტის შექმნა ----
+const manager = new OrderManager();
+let orderCounter = 1;
+
+// ---- ფუნქცია ღილაკისთვის ----
+function createOrder() {
+  const name = document.getElementById('nameInput').value.trim();
+  const food = document.getElementById('foodInput').value.trim();
+
+  if (!name || !food) {
+    alert('გთხოვთ შეავსოთ ყველა ველი!');
+    return;
+  }
+
+  manager.processOrder(orderCounter++, `${name}, ${food}`, orderCompleted);
+
+  // ველების გასუფთავება
+  document.getElementById('nameInput').value = '';
+  document.getElementById('foodInput').value = '';
+}
+</script>
+
+</body>
+</html>

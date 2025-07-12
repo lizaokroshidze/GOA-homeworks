@@ -1,4 +1,3 @@
-
 function orderCompleted(orderId) {
   console.log(`შეკვეთა #${orderId} დამთავრდა`);
 }
@@ -10,14 +9,12 @@ class OrderManager {
   }
 
   processOrder(orderId, customerName, callback) {
-    // ვამატებთ აქტიურ შეკვეთებში
     this.activeOrders.set(orderId, customerName);
     console.log(
       `შეკვეთა მიღებულია: #${orderId}, მომხმარებელი: ${customerName}`
     );
 
     setTimeout(() => {
-
       this.activeOrders.delete(orderId);
 
       this.completedOrders.add(customerName);
@@ -36,7 +33,7 @@ class OrderManager {
     }
 
     console.log("------ დასრულებული შეკვეთები ------");
-    
+
     for (let customerName of this.completedOrders) {
       console.log(`მომხმარებელი: ${customerName}`);
     }
