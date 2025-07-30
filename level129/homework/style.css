@@ -1,0 +1,112 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.weather-app {
+    background-color: #ffffffdd;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.weather-app h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4d9fef;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #357fd0;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+#date {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #444;
+}
+
+.details {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.error-message {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Hidden class for JS toggle */
+.hidden {
+    display: none;
+}
