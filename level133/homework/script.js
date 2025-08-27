@@ -38,5 +38,3 @@ function getUser() {
     .catch(err => {
       console.error("მონაცემები ვერ მოიძებნა:", err);
     });
-
-.
