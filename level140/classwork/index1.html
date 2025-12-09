@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16.0/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16.0/umd/react-dom.development.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      const wrapper = React.createElement(
+        "div",
+        { style: { display: "flex", gap: "30px", flexDirection: "column", alignItems: "center" } },
+
+        // აქ children-ს ვამატებთ
+        React.createElement(
+          "div",
+          { style: { display: "flex", gap: "40px", flexDirection: "row" } },
+          React.createElement("img", {
+            src: "https://upload.wikimedia.org/wikipedia/commons/6/64/Iris_-_left_eye_of_a_girl.jpg",
+            width: 300,
+            height: 300,
+            style: { objectFit: "cover" },
+          }),
+          React.createElement("img", {
+            src: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Iris_-_right_eye_of_a_girl.jpg",
+            width: 300,
+            height: 300,
+            style: { objectFit: "cover" },
+          })
+        ),
+
+        React.createElement(
+          "p",
+          { style: { fontSize: "20px", fontWeight: "bold" } },
+          "NOSE"
+        ),
+        React.createElement("div", {
+          style: {
+            width: 200,
+            height: 50,
+            backgroundColor: "red",
+            border: "2px solid black",
+          },
+        })
+      );
+
+      ReactDOM.render(wrapper, document.getElementById("root"));
+    </script>
+  </body>
+</html>

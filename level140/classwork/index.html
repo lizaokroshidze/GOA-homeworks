@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16.0/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16.0/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      // createElement()
+
+      console.log(React);
+      console.log(ReactDOM);
+
+      ReactDOM.render(
+        React.createElement(
+          "div",
+          { className: "test" },
+          React.createElement(
+            "img",
+            {
+              src: "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-fall-nature-scenery-free-image.jpeg?w=600&quality=80",
+              width: 300,
+              height: 200,
+              style: { objectFit: "cover" },
+            },
+            null
+          ),
+          React.createElement("h1", null, "Goa Best")
+        ),
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
