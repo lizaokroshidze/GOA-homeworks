@@ -1,8 +1,16 @@
-async function getMovie() {
-  const movieName = document.getElementById("movieInput").value;
+import { apiKey } from "./config.js";
+
+const searchBtn = document.getElementById("searchBtn");
+
+searchBtn.addEventListener("click", async () => {
+  const movieName = document.getElementById("movieInput").value.trim();
   const resultDiv = document.getElementById("result");
 
-  const apiKey = "175826cf"; // შენი API key
+  if (!movieName) {
+    resultDiv.innerHTML = "<p>Please enter a movie name 🎬</p>";
+    return;
+  }
+
   const url = `https://www.omdbapi.com/?t=${movieName}&apikey=${apiKey}`;
 
   try {
@@ -14,14 +22,19 @@ async function getMovie() {
       return;
     }
 
+    const poster =
+      data.Poster !== "N/A"
+        ? data.Poster
+        : "https://via.placeholder.com/200x300?text=No+Image";
+
     resultDiv.innerHTML = `
-        <h2>${data.Title}</h2>
-        <p><strong>Year:</strong> ${data.Year}</p>
-        <p><strong>Genre:</strong> ${data.Genre}</p>
-        <img src="${data.Poster}" alt="Poster of ${data.Title}" width="200">
-      `;
+      <h2>${data.Title}</h2>
+      <p><strong>Year:</strong> ${data.Year}</p>
+      <p><strong>Genre:</strong> ${data.Genre}</p>
+      <img src="${poster}" alt="Poster of ${data.Title}" width="200">
+    `;
   } catch (error) {
     resultDiv.innerHTML = "<p>Error loading data ⚠️</p>";
     console.log(error);
   }
-}
+});
