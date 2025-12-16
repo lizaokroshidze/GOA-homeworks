@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@media (min-width: 1351px) {
+  .burger-menu {
+    display: none;
+  }
+}
